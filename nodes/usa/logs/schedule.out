@@ -1,0 +1,405 @@
+
+ 2026-11-13 05:57:00 Running ["artisan" dstore:sync:run] .. 2.42ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 05:58:00 Running ["artisan" dstore:monitor --once] .. 8.94ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 05:59:00 Running ["artisan" dstore:monitor --once] .. 1.19ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 05:59:00 Running ["artisan" dstore:sync:run] .. 2s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 06:01:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:02:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 06:03:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:04:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 06:05:00 Running ["artisan" dstore:monitor --once] .. 1.40ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 06:07:00 Running ["artisan" dstore:sync:run] .. 1.50ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 06:09:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 06:10:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:10:01 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:11:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 06:12:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:12:01 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:13:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 06:14:00 Running ["artisan" dstore:monitor --once] .. 10.07ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 06:16:00 Running ["artisan" dstore:monitor --once] .. 1.32ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:16:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 06:19:00 Running ["artisan" dstore:monitor --once] .. 12.39ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 06:20:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 06:21:00 Running ["artisan" dstore:monitor --once] .. 19.80ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:21:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:22:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 06:23:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 06:25:00 Running ["artisan" dstore:monitor --once] .. 1.52ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:25:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:26:00 Running ["artisan" dstore:monitor --once] .. 1.37ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:26:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:27:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:27:01 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:28:00 Running ["artisan" dstore:monitor --once] .. 1.64ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:28:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:29:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:30:00 Running ["artisan" dstore:monitor --once] .. 1.15ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 06:31:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:32:00 Running ["artisan" dstore:monitor --once] .. 8.39ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 06:33:00 Running ["artisan" dstore:monitor --once] .. 9.35ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:33:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 06:36:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:37:00 Running ["artisan" dstore:monitor --once] .. 1.37ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:37:00 Running ["artisan" dstore:sync:run] .. 0.55ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:38:00 Running ["artisan" dstore:monitor --once] .. 1.12ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:38:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:39:00 Running ["artisan" dstore:monitor --once] .. 1.44ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:39:00 Running ["artisan" dstore:sync:run] .. 0.39ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:40:00 Running ["artisan" dstore:sync:run] .. 6.64ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:41:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:42:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 06:43:00 Running ["artisan" dstore:sync:run] .. 1.81ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:44:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 06:46:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:46:01 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 06:48:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 06:50:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 06:52:00 Running ["artisan" dstore:sync:run] .. 1.50ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:53:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 06:54:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:54:02 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 06:56:00 Running ["artisan" dstore:sync:run] .. 1.33ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:57:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 06:57:02 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 06:58:00 Running ["artisan" dstore:monitor --once] .. 5.28ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:00:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 07:01:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 07:02:00 Running ["artisan" dstore:sync:run] .. 9.04ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:04:00 Running ["artisan" dstore:sync:run] .. 8.75ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:05:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:07:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 07:08:00 Running ["artisan" dstore:sync:run] .. 3s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:09:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 07:09:02 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:12:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:14:00 Running ["artisan" dstore:monitor --once] .. 9.84ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:16:00 Running ["artisan" dstore:sync:run] .. 7.24ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:17:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 07:18:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:20:00 Running ["artisan" dstore:sync:run] .. 1.75ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:21:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 07:22:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:24:00 Running ["artisan" dstore:monitor --once] .. 1.07ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 07:24:00 Running ["artisan" dstore:sync:run] .. 0.54ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:25:00 Running ["artisan" dstore:monitor --once] .. 8.15ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 07:25:01 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:26:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:27:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:28:00 Running ["artisan" dstore:sync:run] .. 3s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:29:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:30:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:31:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 07:32:00 Running ["artisan" dstore:monitor --once] .. 1.78ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 07:32:00 Running ["artisan" dstore:sync:run] .. 0.37ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:33:00 Running ["artisan" dstore:monitor --once] .. 8.75ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 07:33:00 Running ["artisan" dstore:sync:run] .. 0.38ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:34:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:35:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:36:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:39:00 Running ["artisan" dstore:monitor --once] .. 1.49ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 07:39:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:40:00 Running ["artisan" dstore:sync:run] .. 3s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:42:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 07:43:00 Running ["artisan" dstore:monitor --once] .. 13.35ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 07:44:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:45:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:47:00 Running ["artisan" dstore:sync:run] .. 2s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:48:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:49:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 07:50:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+ INFO No scheduled commands are ready to run. 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:54:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:56:00 Running ["artisan" dstore:monitor --once] .. 1.50ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 07:56:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 07:58:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 07:58:01 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 07:59:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+ INFO No scheduled commands are ready to run. 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 08:03:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 08:05:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 08:06:00 Running ["artisan" dstore:sync:run] .. 4.97ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 08:07:01 Running ["artisan" dstore:sync:run] .. 15.62ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 08:08:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 08:10:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 08:11:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 08:12:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 08:13:00 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 08:14:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+
+ 2026-11-13 08:15:00 Running ["artisan" dstore:monitor --once] .. 7.68ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 08:17:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 
+
+ 2026-11-13 08:19:00 Running ["artisan" dstore:sync:run] .. 1.24ms DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+
+ 2026-11-13 08:20:00 Running ["artisan" dstore:monitor --once] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:monitor --once > "NUL" 2>&1 
+ 2026-11-13 08:20:01 Running ["artisan" dstore:sync:run] .. 1s DONE
+ ⇂ "C:\laragon\bin\php\php-8.3\php.exe" "artisan" dstore:sync:run > "NUL" 2>&1 
+ INFO No scheduled commands are ready to run. 

@@ -1,0 +1,2928 @@
+self UAE (uae) epoch 619e0cc2d55c uptime 0s records 16 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 120.92ms | 09abe86acaab | | |
+| uk | online | yes | 155.48ms | f7f7921074a9 | restarted | |
+| usa | online | yes | 65.32ms | 3663059f5c7a | | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 6s records 16 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 95.28ms | 09abe86acaab | | |
+| uk | online | yes | 92.5ms | f7f7921074a9 | | |
+| usa | online | yes | 60.55ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 11s records 16 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 69.66ms | 09abe86acaab | | |
+| uk | online | yes | 46.46ms | f7f7921074a9 | | |
+| usa | online | yes | 62ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 17s records 16 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 88.26ms | 09abe86acaab | | |
+| uk | online | yes | 51.92ms | f7f7921074a9 | | |
+| usa | online | yes | 47.26ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 22s records 16 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 72.49ms | 09abe86acaab | | |
+| uk | online | yes | 49.86ms | f7f7921074a9 | | |
+| usa | online | yes | 53.19ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 27s records 16 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 53.92ms | 09abe86acaab | | |
+| uk | online | yes | 46.09ms | 26a08c894f17 | | |
+| usa | online | yes | 49.75ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 33s records 16 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 47.6ms | 09abe86acaab | | |
+| uk | online | yes | 121.37ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 41.74ms | 3663059f5c7a | | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 38s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 75.97ms | 09abe86acaab | | |
+| uk | online | yes | 52.26ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 57.73ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 44s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 63.41ms | 09abe86acaab | | |
+| uk | online | yes | 48.68ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 44.8ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 49s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 66.03ms | 09abe86acaab | | |
+| uk | online | yes | 57.15ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 58.37ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 54s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 79.6ms | 09abe86acaab | | |
+| uk | online | yes | 47.74ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 40.16ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 60s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 51.43ms | 09abe86acaab | | |
+| uk | online | yes | 59.08ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 78.66ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 65s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 48.91ms | 09abe86acaab | | |
+| uk | online | yes | 52.75ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 50.35ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 70s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 46.42ms | 09abe86acaab | | |
+| uk | online | yes | 56.25ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 46.45ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 76s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 66.93ms | 09abe86acaab | | |
+| uk | online | yes | 51.4ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 55.01ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 81s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 82.36ms | 09abe86acaab | | |
+| uk | online | yes | 63.27ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 62.34ms | 3663059f5c7a | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 87s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 54.56ms | 09abe86acaab | | |
+| uk | online | yes | 48.26ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 44.93ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 92s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 55.02ms | 09abe86acaab | | |
+| uk | online | yes | 51.05ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 51.97ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 97s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 47.57ms | 09abe86acaab | | |
+| uk | online | yes | 51.31ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 40.4ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 103s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 49.29ms | 09abe86acaab | | |
+| uk | online | yes | 41.71ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 55.6ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 108s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 84.5ms | 09abe86acaab | | |
+| uk | online | yes | 49.32ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 62.8ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 113s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 39.39ms | 09abe86acaab | | |
+| uk | online | yes | 50.04ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 43.25ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 119s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 48.51ms | 09abe86acaab | | |
+| uk | online | yes | 53.29ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 42.86ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 124s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 76.62ms | 09abe86acaab | | |
+| uk | online | yes | 52.51ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 52.22ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 130s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 43.81ms | 09abe86acaab | | |
+| uk | online | yes | 48.02ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 48.35ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 135s records 16 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 68.56ms | 09abe86acaab | | |
+| uk | online | yes | 126.99ms | 26a08c894f17 | | |
+| usa | online | yes | 69.79ms | ea753d77d429 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 141s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 72.8ms | 09abe86acaab | | |
+| uk | online | yes | 53.85ms | 26a08c894f17 | restarted | |
+| usa | online | yes | 52.4ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 146s records 16 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 74.98ms | 09abe86acaab | | |
+| uk | online | yes | 56.9ms | 17952adb9415 | | |
+| usa | online | yes | 49.81ms | ea753d77d429 | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 151s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 77.2ms | 09abe86acaab | | |
+| uk | online | yes | 49.84ms | 17952adb9415 | restarted | |
+| usa | online | yes | 48.55ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 157s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 86.1ms | 09abe86acaab | | |
+| uk | online | yes | 51ms | 17952adb9415 | restarted | |
+| usa | online | yes | 44.98ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 162s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 83.86ms | 09abe86acaab | | |
+| uk | online | yes | 50.02ms | 17952adb9415 | restarted | |
+| usa | online | yes | 43.69ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 168s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 67.16ms | 09abe86acaab | | |
+| uk | online | yes | 48.73ms | 17952adb9415 | restarted | |
+| usa | online | yes | 47.62ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 173s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 54.02ms | 09abe86acaab | | |
+| uk | online | yes | 45.72ms | 17952adb9415 | restarted | |
+| usa | online | yes | 43.39ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 178s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 47.91ms | 09abe86acaab | | |
+| uk | online | yes | 44.74ms | 17952adb9415 | restarted | |
+| usa | online | yes | 52.29ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 184s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 90.02ms | 09abe86acaab | | |
+| uk | online | yes | 54.75ms | 17952adb9415 | restarted | |
+| usa | online | yes | 52.12ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 189s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 71.79ms | 09abe86acaab | | |
+| uk | online | yes | 49.93ms | 17952adb9415 | restarted | |
+| usa | online | yes | 53.54ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 194s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 70.3ms | 09abe86acaab | | |
+| uk | online | yes | 56.35ms | 17952adb9415 | restarted | |
+| usa | online | yes | 50.16ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 200s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 58.88ms | 09abe86acaab | | |
+| uk | online | yes | 73.01ms | 17952adb9415 | restarted | |
+| usa | online | yes | 47.46ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 205s records 16 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 53.51ms | f06ca9d3a450 | | |
+| uk | online | yes | 53.23ms | 17952adb9415 | | |
+| usa | online | yes | 49.7ms | ea753d77d429 | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 210s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 71.77ms | f06ca9d3a450 | restarted | |
+| uk | online | yes | 43.94ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46.19ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 216s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 81.86ms | f06ca9d3a450 | restarted | |
+| uk | online | yes | 45.16ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45.75ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 221s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 53.49ms | f06ca9d3a450 | restarted | |
+| uk | online | yes | 57ms | 17952adb9415 | restarted | |
+| usa | online | yes | 54.01ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 227s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 44.86ms | f06ca9d3a450 | restarted | |
+| uk | online | yes | 45.4ms | 17952adb9415 | restarted | |
+| usa | online | yes | 39.99ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 232s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 84.6ms | f06ca9d3a450 | restarted | |
+| uk | online | yes | 53.57ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46.13ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 237s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 49.75ms | f06ca9d3a450 | restarted | |
+| uk | online | yes | 52.09ms | 17952adb9415 | restarted | |
+| usa | online | yes | 53.45ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 243s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 65.4ms | f06ca9d3a450 | restarted | |
+| uk | online | yes | 60.55ms | 17952adb9415 | restarted | |
+| usa | online | yes | 44.79ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 248s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 87.81ms | f06ca9d3a450 | restarted | |
+| uk | online | yes | 51.54ms | 17952adb9415 | restarted | |
+| usa | online | yes | 50.06ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 254s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 44.36ms | f06ca9d3a450 | restarted | |
+| uk | online | yes | 51.13ms | 17952adb9415 | restarted | |
+| usa | online | yes | 52.81ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 259s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 82.79ms | f06ca9d3a450 | restarted | |
+| uk | online | yes | 48.66ms | 17952adb9415 | restarted | |
+| usa | online | yes | 47.17ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 264s records 16 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 68.62ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 48.15ms | 17952adb9415 | | |
+| usa | online | yes | 61.94ms | ea753d77d429 | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 270s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 50.72ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 39.32ms | 17952adb9415 | restarted | |
+| usa | online | yes | 47.93ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 275s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 68.23ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 47.57ms | 17952adb9415 | restarted | |
+| usa | online | yes | 50.34ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 280s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 64.82ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 47.72ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45.24ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 286s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 67.3ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 45.16ms | 17952adb9415 | restarted | |
+| usa | online | yes | 44.77ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 291s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 86.19ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 44.7ms | 17952adb9415 | restarted | |
+| usa | online | yes | 48.34ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 297s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 47.04ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 44.61ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46.87ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 302s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 43.9ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 46.48ms | 17952adb9415 | restarted | |
+| usa | online | yes | 41.9ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 307s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 64.61ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 51.9ms | 17952adb9415 | restarted | |
+| usa | online | yes | 49.45ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 313s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 65.34ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 46.65ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46.61ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 318s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 71.09ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 47.83ms | 17952adb9415 | restarted | |
+| usa | online | yes | 50ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 323s records 16 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 56.95ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 53.51ms | 17952adb9415 | | |
+| usa | online | yes | 61.85ms | ea753d77d429 | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 329s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 51.6ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 87.41ms | 17952adb9415 | | |
+| usa | online | yes | 50.82ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 334s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 78.82ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 47.1ms | 17952adb9415 | restarted | |
+| usa | online | yes | 57.7ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 340s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 55.02ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 48.3ms | 17952adb9415 | restarted | |
+| usa | online | yes | 47.73ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 345s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 71.93ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 47ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45.02ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 350s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 49.93ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 50.42ms | 17952adb9415 | restarted | |
+| usa | online | yes | 43.75ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 356s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 81.27ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 48.57ms | 17952adb9415 | restarted | |
+| usa | online | yes | 48.36ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 361s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 90.82ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 44.79ms | 17952adb9415 | restarted | |
+| usa | online | yes | 40.57ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 366s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 60.96ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 42.77ms | 17952adb9415 | restarted | |
+| usa | online | yes | 44.66ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 372s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 57.49ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 41.99ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 377s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 83.26ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 42.7ms | 17952adb9415 | restarted | |
+| usa | online | yes | 47.01ms | ea753d77d429 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 383s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 57.17ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 44.15ms | 17952adb9415 | | |
+| usa | online | yes | 48.22ms | f7012ac09e5d | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 388s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 89.66ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 47.74ms | 17952adb9415 | restarted | |
+| usa | online | yes | 47.58ms | f7012ac09e5d | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 393s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 77.32ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 44.59ms | 17952adb9415 | restarted | |
+| usa | online | yes | 42.04ms | f7012ac09e5d | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 399s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 74.73ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 45.65ms | 17952adb9415 | restarted | |
+| usa | online | yes | 47.65ms | f7012ac09e5d | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 404s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 70.14ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 54.69ms | 17952adb9415 | restarted | |
+| usa | online | yes | 51.92ms | f7012ac09e5d | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 410s records 16 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 113.25ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 52.03ms | 17952adb9415 | restarted | |
+| usa | online | yes | 49.59ms | f7012ac09e5d | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 415s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 57.93ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 55.05ms | 17952adb9415 | restarted | |
+| usa | online | yes | 56.8ms | f7012ac09e5d | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 420s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 84.75ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 56.29ms | 17952adb9415 | restarted | |
+| usa | online | yes | 57.03ms | f7012ac09e5d | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 428s records 16 degraded no
++----------+--------+-----------+-----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+-----------+--------------+-----------+-------+
+| pakistan | online | yes | 83.14ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 2129.01ms | 17952adb9415 | restarted | |
+| usa | online | yes | 47.55ms | f7012ac09e5d | restarted | |
++----------+--------+-----------+-----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 433s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 43.72ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 46.77ms | 17952adb9415 | restarted | |
+| usa | online | yes | 56.41ms | f7012ac09e5d | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 439s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 46.09ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 50.69ms | 17952adb9415 | restarted | |
+| usa | online | yes | 54.65ms | f7012ac09e5d | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 444s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 45.2ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 46.11ms | 17952adb9415 | | |
+| usa | online | yes | 50.66ms | 23bfb1ba1213 | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 449s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 45.09ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 43.11ms | 17952adb9415 | restarted | |
+| usa | online | yes | 56.21ms | 23bfb1ba1213 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 455s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 45.9ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 39.55ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45.41ms | 23bfb1ba1213 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 460s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 43.29ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 43.09ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45.25ms | 23bfb1ba1213 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 465s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 42.74ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 41.73ms | 17952adb9415 | restarted | |
+| usa | online | yes | 51.93ms | 23bfb1ba1213 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 471s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 51.68ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 43.74ms | 17952adb9415 | restarted | |
+| usa | online | yes | 43.81ms | 23bfb1ba1213 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 476s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 67.15ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 44.23ms | 17952adb9415 | restarted | |
+| usa | online | yes | 42.3ms | 23bfb1ba1213 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 481s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 44.17ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 55.64ms | 17952adb9415 | restarted | |
+| usa | online | yes | 57.37ms | 23bfb1ba1213 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 487s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 47.97ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 42.92ms | 17952adb9415 | restarted | |
+| usa | online | yes | 67.25ms | 23bfb1ba1213 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 492s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 41.95ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 43.86ms | 17952adb9415 | restarted | |
+| usa | online | yes | 44.82ms | 23bfb1ba1213 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 497s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 46.73ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 44.48ms | 17952adb9415 | restarted | |
+| usa | online | yes | 56.68ms | 23bfb1ba1213 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 503s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 85.95ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 49.07ms | 17952adb9415 | | |
+| usa | online | yes | 51.94ms | eb703855aa86 | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 508s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 57ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 83.65ms | 17952adb9415 | restarted | |
+| usa | online | yes | 56.57ms | eb703855aa86 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 513s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 97.95ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 56.73ms | 17952adb9415 | restarted | |
+| usa | online | yes | 52.77ms | eb703855aa86 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 519s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 74.95ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 43.61ms | 17952adb9415 | restarted | |
+| usa | online | yes | 53.63ms | eb703855aa86 | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 524s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 66.13ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 81.5ms | 17952adb9415 | restarted | |
+| usa | online | yes | 53.52ms | eb703855aa86 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 530s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 45.99ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 72.04ms | 17952adb9415 | restarted | |
+| usa | online | yes | 49.21ms | eb703855aa86 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 535s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 48.71ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 59.16ms | 17952adb9415 | restarted | |
+| usa | online | yes | 59.8ms | eb703855aa86 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 540s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 58.74ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 42.49ms | 17952adb9415 | restarted | |
+| usa | online | yes | 60.14ms | eb703855aa86 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 546s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 69.89ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 41.59ms | 17952adb9415 | restarted | |
+| usa | online | yes | 50.06ms | eb703855aa86 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 551s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 42.54ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 50.78ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45.05ms | eb703855aa86 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 556s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 89.79ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 43.84ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46.5ms | eb703855aa86 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 562s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 52.48ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 53.84ms | 17952adb9415 | restarted | |
+| usa | online | yes | 63.77ms | eb703855aa86 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 567s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 44.05ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 47.38ms | 17952adb9415 | restarted | |
+| usa | online | yes | 44.16ms | 16195f16aee1 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 572s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 80.47ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 42.84ms | 17952adb9415 | restarted | |
+| usa | online | yes | 41.97ms | 16195f16aee1 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 578s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 55.83ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 47.49ms | 17952adb9415 | restarted | |
+| usa | online | yes | 51.19ms | 16195f16aee1 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 583s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 61.38ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 63.43ms | 17952adb9415 | restarted | |
+| usa | online | yes | 53.65ms | 16195f16aee1 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 589s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 48.33ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 44.21ms | 17952adb9415 | restarted | |
+| usa | online | yes | 50.55ms | 16195f16aee1 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 594s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 62.09ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 41.32ms | 17952adb9415 | restarted | |
+| usa | online | yes | 42.04ms | 16195f16aee1 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 599s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 90.1ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 38.66ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46.74ms | 16195f16aee1 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 605s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 66.12ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 45.01ms | 17952adb9415 | restarted | |
+| usa | online | yes | 52.53ms | 16195f16aee1 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 610s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 50.91ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 47.72ms | 17952adb9415 | restarted | |
+| usa | online | yes | 48.68ms | 16195f16aee1 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 615s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 82.92ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 57.68ms | 17952adb9415 | restarted | |
+| usa | online | yes | 47.48ms | 16195f16aee1 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 621s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 46.16ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 71.68ms | 17952adb9415 | restarted | |
+| usa | online | yes | 72.29ms | 16195f16aee1 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 626s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 60.77ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 43.75ms | 17952adb9415 | restarted | |
+| usa | online | yes | 47.45ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 632s records 16 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 102.52ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 77.77ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45.11ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 637s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 70.89ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 78.45ms | 17952adb9415 | restarted | |
+| usa | online | yes | 44.24ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 642s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 47.23ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 46.04ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45.41ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 648s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 46.72ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 66.36ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 653s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 63.78ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 43.63ms | 17952adb9415 | restarted | |
+| usa | online | yes | 48.45ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 658s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 61.21ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 53.51ms | 17952adb9415 | restarted | |
+| usa | online | yes | 52.59ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 664s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 51.21ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 46.29ms | 17952adb9415 | restarted | |
+| usa | online | yes | 42.66ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 669s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 73.91ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 47.19ms | 17952adb9415 | restarted | |
+| usa | online | yes | 42.05ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 674s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 72.58ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 43.96ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45.21ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 680s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 60.38ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 42.1ms | 17952adb9415 | restarted | |
+| usa | online | yes | 52.2ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 685s records 16 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 95.78ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 41.74ms | 17952adb9415 | | |
+| usa | online | yes | 53.51ms | 221d3eba1dc6 | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 691s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 50.13ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 47.03ms | 17952adb9415 | restarted | |
+| usa | online | yes | 47.1ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 696s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 77.13ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 44.44ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46.94ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 701s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 88.13ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 89.65ms | 17952adb9415 | restarted | |
+| usa | online | yes | 55.31ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 707s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 54.34ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 97.92ms | 17952adb9415 | restarted | |
+| usa | online | yes | 50.58ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 712s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 48.15ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 69.84ms | 17952adb9415 | restarted | |
+| usa | online | yes | 54.47ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 718s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 55.9ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 44.35ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46.56ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 723s records 16 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 104.23ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 41.31ms | 17952adb9415 | restarted | |
+| usa | online | yes | 47.63ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 728s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 53.02ms | 8ec4e0811bb8 | | |
+| uk | online | yes | 48.34ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45.47ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 734s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 73.57ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 43.9ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46.85ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 739s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 77.65ms | 8ec4e0811bb8 | restarted | |
+| uk | online | yes | 43.51ms | 17952adb9415 | restarted | |
+| usa | online | yes | 41.46ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 744s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 60.32ms | 274bf0ac7ed8 | | |
+| uk | online | yes | 41.74ms | 17952adb9415 | | |
+| usa | online | yes | 46.73ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 750s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 71.23ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 48.66ms | 17952adb9415 | restarted | |
+| usa | online | yes | 43.78ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 755s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 83.04ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 43.96ms | 17952adb9415 | restarted | |
+| usa | online | yes | 39.33ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 760s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 52.9ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 40.11ms | 17952adb9415 | restarted | |
+| usa | online | yes | 43.77ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 766s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 52.47ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 43.73ms | 17952adb9415 | restarted | |
+| usa | online | yes | 42ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 771s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 83.6ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 40.49ms | 17952adb9415 | restarted | |
+| usa | online | yes | 40.12ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 776s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 42.98ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 42.34ms | 17952adb9415 | restarted | |
+| usa | online | yes | 42.34ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 782s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 56.28ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 44.96ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46.23ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 787s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 72.5ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 44.46ms | 17952adb9415 | restarted | |
+| usa | online | yes | 41.21ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 792s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 53.23ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 39.37ms | 17952adb9415 | restarted | |
+| usa | online | yes | 43.39ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 798s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 71.18ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 52.94ms | 17952adb9415 | restarted | |
+| usa | online | yes | 44.4ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 803s records 16 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 74.99ms | 274bf0ac7ed8 | | |
+| uk | online | yes | 40.38ms | 17952adb9415 | | |
+| usa | online | yes | 42.6ms | 221d3eba1dc6 | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 808s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 42.87ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 42.4ms | 17952adb9415 | restarted | |
+| usa | online | yes | 49.06ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 814s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 72.41ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 40.82ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45.18ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 819s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 50.31ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 45.55ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46.04ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 825s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 76.2ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 49.88ms | 17952adb9415 | restarted | |
+| usa | online | yes | 41.22ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 830s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 71.04ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 39.73ms | 17952adb9415 | restarted | |
+| usa | online | yes | 40.6ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 835s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 44.17ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 41.92ms | 17952adb9415 | restarted | |
+| usa | online | yes | 43.81ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 841s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 46.28ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 45.76ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45.9ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 846s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 60.55ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 43.64ms | 17952adb9415 | restarted | |
+| usa | online | yes | 40.61ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 851s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 70.58ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 43.97ms | 17952adb9415 | restarted | |
+| usa | online | yes | 41.01ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 857s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 61.82ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 43.83ms | 17952adb9415 | restarted | |
+| usa | online | yes | 45.45ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 862s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 53.89ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 59.15ms | 17952adb9415 | restarted | |
+| usa | online | yes | 52.95ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 867s records 16 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 116.13ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 49.38ms | 17952adb9415 | restarted | |
+| usa | online | yes | 49.06ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 873s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 65.95ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 69.2ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46.33ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 878s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 99.9ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 43.23ms | 17952adb9415 | restarted | |
+| usa | online | yes | 42.01ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 884s records 16 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 100.58ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 43.61ms | 17952adb9415 | restarted | |
+| usa | online | yes | 71.53ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 889s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 83.42ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 38.73ms | 17952adb9415 | restarted | |
+| usa | online | yes | 43.46ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 894s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 64.99ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 42.63ms | 17952adb9415 | restarted | |
+| usa | online | yes | 42.97ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 900s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 49.06ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 38.23ms | 17952adb9415 | restarted | |
+| usa | online | yes | 39.89ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 905s records 16 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 103.47ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 40.16ms | 17952adb9415 | restarted | |
+| usa | online | yes | 49.57ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 910s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 49.22ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 41.04ms | 17952adb9415 | restarted | |
+| usa | online | yes | 42.14ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 916s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 69.05ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 40.35ms | 17952adb9415 | restarted | |
+| usa | online | yes | 44.46ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 921s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 86.99ms | 274bf0ac7ed8 | restarted | |
+| uk | online | yes | 50.43ms | 17952adb9415 | restarted | |
+| usa | online | yes | 62.85ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 926s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 92.44ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 47.66ms | 17952adb9415 | restarted | |
+| usa | online | yes | 42.86ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 932s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 66.93ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 42.99ms | 17952adb9415 | restarted | |
+| usa | online | yes | 39.94ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 937s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 92.04ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 39.31ms | 17952adb9415 | restarted | |
+| usa | online | yes | 46.82ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 943s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 61.83ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 44.46ms | 17952adb9415 | restarted | |
+| usa | online | yes | 44.5ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 948s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 64.55ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 43.39ms | 17952adb9415 | restarted | |
+| usa | online | yes | 43.63ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 953s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 78.97ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 40.08ms | 17952adb9415 | restarted | |
+| usa | online | yes | 94.21ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 959s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 46.59ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 38.82ms | 17952adb9415 | restarted | |
+| usa | online | yes | 38.22ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 964s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 59.26ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 41.13ms | 17952adb9415 | restarted | |
+| usa | online | yes | 40.41ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 969s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 64.39ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 40.27ms | 17952adb9415 | restarted | |
+| usa | online | yes | 40.82ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 975s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 63.74ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 43.62ms | 17952adb9415 | restarted | |
+| usa | online | yes | 36.46ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 980s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 82.6ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 39.13ms | 17952adb9415 | restarted | |
+| usa | online | yes | 42.39ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 985s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 72.25ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 44.79ms | 274e339e9656 | restarted | |
+| usa | online | yes | 53.21ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 991s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 66.7ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 43.19ms | 274e339e9656 | restarted | |
+| usa | online | yes | 47.39ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 996s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 84.1ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 45.18ms | 274e339e9656 | restarted | |
+| usa | online | yes | 42.27ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1001s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 65.02ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 65.92ms | 274e339e9656 | restarted | |
+| usa | online | yes | 45.99ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1007s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 59.75ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 50.25ms | 274e339e9656 | restarted | |
+| usa | online | yes | 42.24ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1012s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 56.07ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 56.47ms | 274e339e9656 | restarted | |
+| usa | online | yes | 43.88ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1017s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 76.05ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 55.54ms | 274e339e9656 | | |
+| usa | online | yes | 44.52ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1023s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 49.91ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 76.68ms | 274e339e9656 | | |
+| usa | online | yes | 42.95ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1028s records 16 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 100.48ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 51.65ms | 274e339e9656 | | |
+| usa | online | yes | 45.88ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1034s records 16 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 73.21ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 58.24ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.41ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1039s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 81.84ms | 1853c40e5f5b | restarted | |
+| uk | online | yes | 53.36ms | 18206fd9e9ba | | |
+| usa | online | yes | 47.7ms | 221d3eba1dc6 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1044s records 17 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 61.11ms | 724299f17452 | | |
+| uk | online | yes | 48.62ms | 18206fd9e9ba | | |
+| usa | online | yes | 44.76ms | c6d98e8977bb | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1050s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 55.64ms | 724299f17452 | restarted | |
+| uk | online | yes | 50.67ms | 18206fd9e9ba | | |
+| usa | online | yes | 74.81ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1055s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 84.39ms | 724299f17452 | restarted | |
+| uk | online | yes | 50.22ms | 18206fd9e9ba | | |
+| usa | online | yes | 39.61ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1060s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 65.63ms | 724299f17452 | restarted | |
+| uk | online | yes | 48.02ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.3ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1066s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 63.82ms | 724299f17452 | restarted | |
+| uk | online | yes | 51.24ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.13ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1071s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 88.79ms | 724299f17452 | restarted | |
+| uk | online | yes | 68.8ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.17ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1077s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 54.23ms | 724299f17452 | restarted | |
+| uk | online | yes | 51.01ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.34ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1082s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 63.51ms | 724299f17452 | restarted | |
+| uk | online | yes | 48.35ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.51ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1087s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 88.78ms | 724299f17452 | restarted | |
+| uk | online | yes | 48.91ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.15ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1093s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 59.09ms | 724299f17452 | restarted | |
+| uk | online | yes | 49.26ms | 18206fd9e9ba | | |
+| usa | online | yes | 45.71ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1098s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 50.39ms | 724299f17452 | restarted | |
+| uk | online | yes | 48.88ms | 18206fd9e9ba | | |
+| usa | online | yes | 45.92ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1103s records 17 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 52.82ms | 724299f17452 | | |
+| uk | online | yes | 51.78ms | 18206fd9e9ba | | |
+| usa | online | yes | 39.7ms | c6d98e8977bb | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1109s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 80.62ms | 724299f17452 | restarted | |
+| uk | online | yes | 49.42ms | 18206fd9e9ba | | |
+| usa | online | yes | 45.67ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1114s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 91.73ms | 724299f17452 | restarted | |
+| uk | online | yes | 47.77ms | 18206fd9e9ba | | |
+| usa | online | yes | 40.99ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1119s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 69.79ms | 724299f17452 | restarted | |
+| uk | online | yes | 50.47ms | 18206fd9e9ba | | |
+| usa | online | yes | 45.28ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1125s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 63.06ms | 724299f17452 | restarted | |
+| uk | online | yes | 52.44ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.26ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1130s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 84.59ms | 724299f17452 | restarted | |
+| uk | online | yes | 50.56ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.94ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1135s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 75.85ms | 724299f17452 | restarted | |
+| uk | online | yes | 51.15ms | 18206fd9e9ba | | |
+| usa | online | yes | 44.21ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1141s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 60.84ms | 724299f17452 | restarted | |
+| uk | online | yes | 47.49ms | 18206fd9e9ba | | |
+| usa | online | yes | 44.94ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1146s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 63.11ms | 724299f17452 | restarted | |
+| uk | online | yes | 52.66ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.23ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1152s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 85.88ms | 724299f17452 | restarted | |
+| uk | online | yes | 46.7ms | 18206fd9e9ba | | |
+| usa | online | yes | 41.13ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1157s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 92.05ms | 724299f17452 | restarted | |
+| uk | online | yes | 52.52ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.16ms | c6d98e8977bb | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1162s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 56.47ms | 724299f17452 | restarted | |
+| uk | online | yes | 56.68ms | 18206fd9e9ba | | |
+| usa | online | yes | 70.83ms | 9c3fefede330 | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1168s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 85.83ms | 724299f17452 | restarted | |
+| uk | online | yes | 47.97ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.28ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1173s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 79.08ms | 724299f17452 | restarted | |
+| uk | online | yes | 51.03ms | 18206fd9e9ba | | |
+| usa | online | yes | 44.25ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1178s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 68.33ms | 724299f17452 | restarted | |
+| uk | online | yes | 49.27ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.03ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1184s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 73.02ms | 724299f17452 | restarted | |
+| uk | online | yes | 49.56ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.73ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1189s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 61.14ms | 724299f17452 | restarted | |
+| uk | online | yes | 47.45ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.05ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1194s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 51.61ms | 724299f17452 | restarted | |
+| uk | online | yes | 54.02ms | 18206fd9e9ba | | |
+| usa | online | yes | 41.08ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1200s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 70.2ms | 724299f17452 | restarted | |
+| uk | online | yes | 73.25ms | 18206fd9e9ba | | |
+| usa | online | yes | 41.98ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1205s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 62.72ms | 724299f17452 | restarted | |
+| uk | online | yes | 51.6ms | 18206fd9e9ba | | |
+| usa | online | yes | 45.26ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1211s records 17 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 129.03ms | 724299f17452 | restarted | |
+| uk | online | yes | 48.32ms | 18206fd9e9ba | | |
+| usa | online | yes | 40.08ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1216s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 98.26ms | 724299f17452 | restarted | |
+| uk | online | yes | 46.94ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.05ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1221s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 72.7ms | 724299f17452 | restarted | |
+| uk | online | yes | 77.77ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.77ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1227s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 61.08ms | 724299f17452 | restarted | |
+| uk | online | yes | 52.35ms | 18206fd9e9ba | | |
+| usa | online | yes | 40.83ms | 9c3fefede330 | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1232s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 70.23ms | 724299f17452 | restarted | |
+| uk | online | yes | 52.9ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.5ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1237s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 81.77ms | 724299f17452 | restarted | |
+| uk | online | yes | 51.97ms | 18206fd9e9ba | | |
+| usa | online | yes | 39.61ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1243s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 83.95ms | 724299f17452 | restarted | |
+| uk | online | yes | 49.03ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.81ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1248s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 61.91ms | 724299f17452 | restarted | |
+| uk | online | yes | 47.69ms | 18206fd9e9ba | | |
+| usa | online | yes | 44.61ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1254s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 55.34ms | 724299f17452 | restarted | |
+| uk | online | yes | 49.68ms | 18206fd9e9ba | | |
+| usa | online | yes | 45.18ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1259s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 94.96ms | 724299f17452 | restarted | |
+| uk | online | yes | 45.74ms | 18206fd9e9ba | | |
+| usa | online | yes | 46.03ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1264s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 86.15ms | 724299f17452 | restarted | |
+| uk | online | yes | 48.79ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.96ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1270s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 70.76ms | 724299f17452 | restarted | |
+| uk | online | yes | 50.61ms | 18206fd9e9ba | | |
+| usa | online | yes | 60.19ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1275s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 66.18ms | 724299f17452 | restarted | |
+| uk | online | yes | 48.97ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.05ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1280s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 93.48ms | 724299f17452 | restarted | |
+| uk | online | yes | 48.62ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.2ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1286s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 63.64ms | 9e168bbd8c1b | restarted | |
+| uk | online | yes | 70.1ms | 18206fd9e9ba | | |
+| usa | online | yes | 44.49ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1291s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 62.79ms | 9e168bbd8c1b | restarted | |
+| uk | online | yes | 50.6ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.91ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1297s records 17 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 110.07ms | 9e168bbd8c1b | restarted | |
+| uk | online | yes | 57.2ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.96ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1302s records 17 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 112.33ms | 9e168bbd8c1b | restarted | |
+| uk | online | yes | 53.24ms | 18206fd9e9ba | | |
+| usa | online | yes | 44.9ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1307s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 62.93ms | 9e168bbd8c1b | restarted | |
+| uk | online | yes | 49.01ms | 18206fd9e9ba | | |
+| usa | online | yes | 40.68ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1313s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 64.86ms | 9e168bbd8c1b | restarted | |
+| uk | online | yes | 46.9ms | 18206fd9e9ba | | |
+| usa | online | yes | 39.98ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1318s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 61.22ms | 9e168bbd8c1b | restarted | |
+| uk | online | yes | 51.4ms | 18206fd9e9ba | | |
+| usa | online | yes | 41.72ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1323s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 81.41ms | 9e168bbd8c1b | restarted | |
+| uk | online | yes | 50.61ms | 18206fd9e9ba | | |
+| usa | online | yes | 40.31ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1329s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 59.17ms | 9e168bbd8c1b | restarted | |
+| uk | online | yes | 48.22ms | 18206fd9e9ba | | |
+| usa | online | yes | 61.46ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1334s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 65.68ms | 9e168bbd8c1b | restarted | |
+| uk | online | yes | 50.88ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.97ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1339s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 82.44ms | 9e168bbd8c1b | restarted | |
+| uk | online | yes | 52.97ms | 18206fd9e9ba | | |
+| usa | online | yes | 41.25ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1345s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 68.05ms | 564e62380751 | restarted | |
+| uk | online | yes | 69.43ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.69ms | 9c3fefede330 | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1350s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 67.46ms | 564e62380751 | restarted | |
+| uk | online | yes | 47.12ms | 18206fd9e9ba | | |
+| usa | online | yes | 44.92ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1356s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 63.33ms | 564e62380751 | restarted | |
+| uk | online | yes | 49.53ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.33ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1361s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 68.52ms | 564e62380751 | restarted | |
+| uk | online | yes | 50.98ms | 18206fd9e9ba | | |
+| usa | online | yes | 44.76ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1366s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 54.33ms | 564e62380751 | restarted | |
+| uk | online | yes | 52.09ms | 18206fd9e9ba | | |
+| usa | online | yes | 40.77ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1371s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 64.53ms | 564e62380751 | restarted | |
+| uk | online | yes | 52.26ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.36ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1377s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 49.16ms | 564e62380751 | restarted | |
+| uk | online | yes | 50.29ms | 18206fd9e9ba | | |
+| usa | online | yes | 39ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1382s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 53.45ms | 564e62380751 | restarted | |
+| uk | online | yes | 59.63ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.8ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1387s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 54.17ms | 564e62380751 | restarted | |
+| uk | online | yes | 52.78ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.17ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1393s records 17 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 119.79ms | 564e62380751 | restarted | |
+| uk | online | yes | 48.97ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.41ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1398s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 56.55ms | 564e62380751 | restarted | |
+| uk | online | yes | 52.91ms | 18206fd9e9ba | | |
+| usa | online | yes | 41.55ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1404s records 17 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 54.13ms | cde2b2c72724 | | |
+| uk | online | yes | 58.02ms | 18206fd9e9ba | | |
+| usa | online | yes | 40.49ms | 9c3fefede330 | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1409s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 84.86ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 83.49ms | 18206fd9e9ba | | |
+| usa | online | yes | 48.84ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1414s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 52.3ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 47.52ms | 18206fd9e9ba | | |
+| usa | online | yes | 45.73ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1420s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 59.13ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 46.93ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.44ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1425s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 94.09ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 49.92ms | 18206fd9e9ba | | |
+| usa | online | yes | 41.48ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1430s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 63.69ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 51.72ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.09ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1436s records 17 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 206.64ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 58.14ms | 18206fd9e9ba | | |
+| usa | online | yes | 45.45ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1442s records 17 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 68.06ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 150.2ms | 18206fd9e9ba | | |
+| usa | online | yes | 120.58ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1447s records 17 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 154.88ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 112.26ms | 18206fd9e9ba | | |
+| usa | online | yes | 90.75ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1453s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 74.8ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 50.21ms | 18206fd9e9ba | | |
+| usa | online | yes | 41.72ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1458s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 62.1ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 48.97ms | 18206fd9e9ba | | |
+| usa | online | yes | 45.9ms | 9c3fefede330 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1464s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 67.47ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 50.19ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.75ms | 9bba16807594 | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1469s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 81.15ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 50.41ms | 18206fd9e9ba | | |
+| usa | online | yes | 41.33ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1474s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 66ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 51.33ms | 18206fd9e9ba | | |
+| usa | online | yes | 48.16ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1480s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 54.01ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 48.75ms | 18206fd9e9ba | | |
+| usa | online | yes | 42.81ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1485s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 52.72ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 51.3ms | 18206fd9e9ba | | |
+| usa | online | yes | 44.16ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1490s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 51.11ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 51.91ms | 18206fd9e9ba | | |
+| usa | online | yes | 43ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1496s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 64.12ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 52.72ms | 18206fd9e9ba | | |
+| usa | online | yes | 64.1ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1501s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 53.36ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 53.39ms | 18206fd9e9ba | | |
+| usa | online | yes | 47.34ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1506s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 55.99ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 87.3ms | 18206fd9e9ba | | |
+| usa | online | yes | 46.94ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1514s records 17 degraded no
++----------+--------+-----------+-----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+-----------+--------------+-----------+-------+
+| pakistan | online | yes | 2173.56ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 72.36ms | 18206fd9e9ba | | |
+| usa | online | yes | 43.72ms | 9bba16807594 | restarted | |
++----------+--------+-----------+-----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1519s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 60.12ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 50.38ms | 18206fd9e9ba | | |
+| usa | online | yes | 44.73ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1525s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 76.76ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 54.34ms | 9cef6e0fb9d3 | | |
+| usa | online | yes | 41.13ms | 9bba16807594 | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1530s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 79.55ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 50.41ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 41.09ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1535s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 60.73ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 46.56ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 42.7ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1541s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 55.51ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 47.72ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 42.6ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1546s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 88.51ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 64.92ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 41.34ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1551s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 60.32ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 52.07ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 44.37ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1557s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 57.65ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 48.77ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 43.85ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1562s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 61.99ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 49.03ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 44.49ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1567s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 79.52ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 51.23ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 41.74ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1573s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 68.96ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 68.38ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 44.6ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1578s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 60.42ms | cde2b2c72724 | restarted | |
+| uk | online | yes | 48.66ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 42.87ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1584s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 53.3ms | 3ddc7fab3300 | | |
+| uk | online | yes | 46.89ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 43.56ms | 9bba16807594 | | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1589s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 83.24ms | 3ddc7fab3300 | restarted | |
+| uk | online | yes | 49.66ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 52.8ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1594s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 69.74ms | 3ddc7fab3300 | restarted | |
+| uk | online | yes | 51.66ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 72.52ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1600s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 94.82ms | 3ddc7fab3300 | restarted | |
+| uk | online | yes | 54.87ms | 9cef6e0fb9d3 | | |
+| usa | online | yes | 48.13ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1605s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 85.61ms | 3ddc7fab3300 | restarted | |
+| uk | online | yes | 51.42ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 45.09ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1611s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 70.92ms | 3ddc7fab3300 | restarted | |
+| uk | online | yes | 56.44ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 44.43ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1616s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 65.02ms | 3ddc7fab3300 | restarted | |
+| uk | online | yes | 52.83ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 48.46ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1621s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 67.96ms | 3ddc7fab3300 | restarted | |
+| uk | online | yes | 58.65ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 47.39ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1627s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 66.58ms | 3ddc7fab3300 | restarted | |
+| uk | online | yes | 73.51ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 41.52ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1632s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 59.02ms | 3ddc7fab3300 | restarted | |
+| uk | online | yes | 53.27ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 45.25ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1638s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 88.88ms | 3ddc7fab3300 | restarted | |
+| uk | online | yes | 56.5ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 44.66ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1643s records 17 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 57.63ms | 833f39c4c6c3 | | |
+| uk | online | yes | 63.28ms | 9cef6e0fb9d3 | | |
+| usa | online | yes | 48.92ms | 9bba16807594 | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1648s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 82.59ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 52.41ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 47.93ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1654s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 73.24ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 58.08ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 48.78ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1659s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 57.58ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 52.8ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 61.49ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1664s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 75.27ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 52.52ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 44.35ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1670s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 58.4ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 51.98ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 44.91ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1675s records 17 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 101.71ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 52.63ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 44.19ms | 9bba16807594 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1681s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 72.44ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 54.24ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 50.41ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1686s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 84.5ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 54.33ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 44.41ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1692s records 17 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 125.86ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 49.15ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 42.44ms | 9bba16807594 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1697s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 66.24ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 55.11ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 45.39ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1702s records 17 degraded no
++----------+--------+-----------+---------+--------------+------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+------+-------+
+| pakistan | online | yes | 64.21ms | 833f39c4c6c3 | | |
+| uk | online | yes | 82.82ms | 9cef6e0fb9d3 | | |
+| usa | online | yes | 62.19ms | 9bba16807594 | | |
++----------+--------+-----------+---------+--------------+------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1709s records 17 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 61.35ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 55.78ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 108.84ms | 9bba16807594 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1714s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 56.54ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 57.36ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 65.1ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1719s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 83.65ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 52.68ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 46.42ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1725s records 17 degraded no
++----------+--------+-----------+----------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+----------+--------------+-----------+-------+
+| pakistan | online | yes | 60.68ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 187.52ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 42.99ms | 9bba16807594 | restarted | |
++----------+--------+-----------+----------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1731s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 57.79ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 51.43ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 47.19ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+self UAE (uae) epoch 619e0cc2d55c uptime 1736s records 17 degraded no
++----------+--------+-----------+---------+--------------+-----------+-------+
+| peer | state | reachable | latency | epoch | note | error |
++----------+--------+-----------+---------+--------------+-----------+-------+
+| pakistan | online | yes | 84.26ms | 833f39c4c6c3 | restarted | |
+| uk | online | yes | 49.5ms | 9cef6e0fb9d3 | restarted | |
+| usa | online | yes | 43.67ms | 9bba16807594 | restarted | |
++----------+--------+-----------+---------+--------------+-----------+-------+
+Online: 3/3 · gossiped to 3 peer(s)
+
+   ErrorException 
+
+  rename(F:/dstore/nodes/uae/storage/dstore/metadata/peer_status.json.tmp.bc319cb3b0f2,F:/dstore/nodes/uae/storage/dstore/metadata/peer_status.json): Access is denied (code: 5)
+
+  at app\DStore\Storage\AtomicFile.php:29
+     25▕         } finally {
+     26▕             fclose($handle);
+     27▕         }
+     28▕ 
+  ➜  29▕         if (! rename($temporary, $path)) {
+     30▕             @unlink($temporary);
+     31▕ 
+     32▕             throw new StorageException("Atomic rename failed for path: {$path}");
+     33▕         }
+
+  1   app\DStore\Storage\AtomicFile.php:29
+
+  2   app\DStore\Monitoring\PeerStatusStore.php:186
+      App\DStore\Storage\AtomicFile::write("F:/dstore/nodes/uae/storage/dstore/metadata/peer_status.json", "{"pakistan":{"consecutive_failures":0,"degraded":false,"destroyed_at":null,"epoch":"833f39c4c6c3d067bc20e7838b7a6197","events_committed":24,"last_error":null,"last_response_ms":48.1,"last_restart_at":"2026-11-13T06:31:40Z","last_seen_at":"2026-11-13T06:31:40Z","name":"Pakistan","peer":"pakistan","records":17,"region":"asia-south","reported_at":"2026-11-13T06:31:40Z","restarts":564,"started_at":"2026-11-13T06:30:01Z","state":"online","storage_bytes":121847,"updated_at":"2026-11-13T06:31:40Z","url":"http://127.0.0.1:8001"},"uk":{"consecutive_failures":0,"degraded":false,"destroyed_at":null,"epoch":"9cef6e0fb9d332dd1b39a53974aa0e65","events_committed":24,"last_error":null,"last_response_ms":58.7,"last_restart_at":"2026-11-13T06:31:40Z","last_seen_at":"2026-11-13T06:31:40Z","name":"UK","peer":"uk","records":17,"region":"europe","reported_at":"2026-11-13T06:31:40Z","restarts":452,"started_at":"2026-11-13T06:28:01Z","state":"online","storage_bytes":128587,"updated_at":"2026-11-13T06:31:40Z",...")
+
