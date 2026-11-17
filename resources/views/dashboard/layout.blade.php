@@ -323,6 +323,21 @@
         </nav>
 
         <div class="topbar-right">
+            @if (!empty($switchNodes))
+                <label class="chip" style="gap:8px;">
+                    <span>Switch node</span>
+                    <select id="node-switcher" style="background:var(--panel-3);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:4px 8px;font:inherit;max-width:220px;">
+                        @foreach ($switchNodes as $n)
+                            @php($nid = $n['node_id'] ?? ($n['id'] ?? ''))
+                            @php($nurl = rtrim((string) ($n['url'] ?? ''), '/'))
+                            @php($isCurrent = isset($selfId) && $nid === $selfId)
+                            <option value="{{ $nurl !== '' ? $nurl.'/' : url('/nodes/'.$nid) }}" {{ $isCurrent ? 'selected' : '' }}>
+                                {{ $n['name'] ?? $nid }}{{ $isCurrent ? ' (current)' : '' }}
+                            </option>
+                        @endforeach
+                    </select>
+                </label>
+            @endif
             <span class="chip"><span class="dot online"></span> live · refresh 5 s</span>
             <span class="chip">updated <strong data-generated>—</strong></span>
         </div>
@@ -577,6 +592,8 @@
     }
 
     wireProbe();
+    const switcher = document.getElementById('node-switcher');
+    if (switcher) { switcher.addEventListener('change', function () { if (this.value) window.location.href = this.value; }); }
 
     if (page === 'overview') {
         refreshOverview();

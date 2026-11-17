@@ -15,3 +15,6 @@ Route::post('/data-entry', [DataEntryController::class, 'store'])->name('data-en
 Route::get('/data-entry/records', [DataEntryController::class, 'records'])->name('data-entry.records');
 Route::options('/data-entry', [DataEntryController::class, 'options']);
 Route::options('/data-entry/records', [DataEntryController::class, 'options']);
+Route::get('/data-entry/nodes/{node}/records', [DataEntryController::class, 'nodeRecords']);
+Route::post('/data-entry/nodes/{node}', [DataEntryController::class, 'storeOnNode']);
+

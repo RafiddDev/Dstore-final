@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +15,11 @@
         .card h2{margin:0 0 12px;font-size:16px;color:var(--accent)}
         label{display:block;font-size:13px;color:var(--muted);margin:10px 0 6px}
         input,select{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);color:var(--text)}
+        .pw-wrap{position:relative}
+        .pw-wrap input{padding-right:42px}
+        .pw-toggle{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:28px;height:28px;margin:0;padding:0;border:0;border-radius:6px;background:transparent;color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center}
+        .pw-toggle:hover{color:var(--text);background:rgba(255,255,255,.05);filter:none}
+        .pw-toggle svg{width:18px;height:18px;fill:currentColor}
         button{margin-top:14px;width:100%;padding:11px 14px;border:0;border-radius:8px;background:var(--accent);color:#04121f;font-weight:700;cursor:pointer}
         button:hover{filter:brightness(1.05)} button:disabled{opacity:.6;cursor:wait}
         .msg{margin-top:12px;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);font-size:13px}
@@ -67,7 +73,13 @@
                 <input id="username" name="username" type="text" placeholder="username" required>
 
                 <label for="password">Password</label>
-                <input id="password" name="password" type="text" placeholder="password" required>
+                <div class="pw-wrap">
+                    <input id="password" name="password" type="password" placeholder="password" required>
+                    <button type="button" class="pw-toggle" id="togglePassword" aria-label="Show password" title="Show password">
+                        <svg id="eyeIcon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c5.05 0 9.27 3.11 11 7-1.73 3.89-5.95 7-11 7S2.73 15.89 1 12c1.73-3.89 5.95-7 11-7zm0 2C8.24 7 4.94 9.24 3.35 12 4.94 14.76 8.24 17 12 17s7.06-2.24 8.65-5C19.06 9.24 15.76 7 12 7zm0 2.5A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5z"/></svg>
+                        <svg id="eyeOffIcon" viewBox="0 0 24 24" aria-hidden="true" style="display:none"><path d="M3.28 2.22 2.22 3.28l3.1 3.1C3.3 7.61 1.78 9.6 1 12c1.73 3.89 5.95 7 11 7 2.01 0 3.89-.49 5.55-1.36l3.17 3.17 1.06-1.06L3.28 2.22zM12 17c-3.76 0-7.06-2.24-8.65-5 .74-1.28 1.9-2.45 3.33-3.33l1.7 1.7A4.5 4.5 0 0 0 12 16.5c.49 0 .96-.08 1.4-.22l1.73 1.73c-1 .64-2.06.99-3.13.99zm0-10c3.76 0 7.06 2.24 8.65 5-.51.89-1.2 1.72-2.04 2.46l-1.43-1.43c.2-.48.32-1 .32-1.53A5.5 5.5 0 0 0 12 6.5c-.53 0-1.05.12-1.53.32L8.86 5.21C9.82 4.43 10.87 4 12 4v3zm0 4.5c.1 0 .2.01.29.03l-2.76-2.76c.02.09.03.19.03.29A2.44 2.44 0 0 0 12 8.5zm4.94 5.28-1.5-1.5A4.47 4.47 0 0 0 16.5 10.5c0-.24-.02-.47-.06-.7l1.73 1.73c-.34.8-.77 1.55-1.23 2.25z"/></svg>
+                    </button>
+                </div>
 
                 <button id="submitBtn" type="submit">Save & Replicate</button>
             </form>
@@ -106,7 +118,7 @@ function nodeCard(node, state){
                     <td class="mono">${esc(r.id)}</td>
                     <td>${esc(d.email)}</td>
                     <td>${esc(d.username)}</td>
-                    <td class="mono">${esc(d.password)}</td>
+                    <td class="mono">••••••••</td>
                     <td>${esc(r.writer||'')}</td>
                 </tr>`;
             }).join('') + `</tbody></table></div>`;
@@ -120,15 +132,45 @@ function nodeCard(node, state){
     </div>`;
 }
 
-async function loadNode(node){
-    const url = (node.url || '').replace(/\/$/, '') + '/data-entry/records';
+
+
+async function loadNode(node) {
+    const url = window.location.origin +
+        '/data-entry/nodes/' +
+        encodeURIComponent(node.id) +
+        '/records';
+
     try {
-        const r = await fetch(url, { headers: { 'Accept': 'application/json' }, cache: 'no-store' });
-        const data = await r.json().catch(()=>({ok:false,error:'invalid json'}));
-        if(!r.ok) return { ok:false, error: 'HTTP '+r.status };
+        const r = await fetch(url, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json'
+            },
+            credentials: 'same-origin',
+            cache: 'no-store'
+        });
+
+        const data = await r.json();
+
+        if (!r.ok) {
+            return {
+                ok: false,
+                error: data.error || 'HTTP ' + r.status
+            };
+        }
+
         return data;
-    } catch(e){ return { ok:false, error: e.message }; }
+
+    } catch (e) {
+        return {
+            ok: false,
+            error: e.message
+        };
+    }
 }
+
+
+
 
 async function loadAll(){
     const wrap = document.getElementById('nodesWrap');
@@ -144,6 +186,16 @@ function showMsg(text, ok){
     el.textContent=text;
 }
 
+document.getElementById('togglePassword').addEventListener('click', function(){
+    const input = document.getElementById('password');
+    const show = input.type === 'password';
+    input.type = show ? 'text' : 'password';
+    this.setAttribute('aria-label', show ? 'Hide password' : 'Show password');
+    this.setAttribute('title', show ? 'Hide password' : 'Show password');
+    document.getElementById('eyeIcon').style.display = show ? 'none' : '';
+    document.getElementById('eyeOffIcon').style.display = show ? '' : 'none';
+});
+
 document.getElementById('entryForm').addEventListener('submit', async (e)=>{
     e.preventDefault();
     const btn = document.getElementById('submitBtn');
@@ -158,9 +210,15 @@ document.getElementById('entryForm').addEventListener('submit', async (e)=>{
     btn.disabled = true;
     showMsg('Saving on ' + targetId + '...', true);
     try {
-        const r = await fetch(targetUrl + '/data-entry', {
+        const r = await fetch('/data-entry/nodes/' + encodeURIComponent(targetId), {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'X-CSRF-TOKEN': document.querySelector(
+        'meta[name="csrf-token"]'
+    ).content
+},
             body: JSON.stringify(payload)
         });
         const data = await r.json().catch(()=>({ok:false,error:'invalid response'}));

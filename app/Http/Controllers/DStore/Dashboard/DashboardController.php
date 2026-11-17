@@ -19,9 +19,12 @@ class DashboardController extends Controller
 {
     public function index(DashboardService $dashboard)
     {
+        $overview = $dashboard->overview();
+
         return view('dashboard.overview', [
-            'overview' => $dashboard->overview(),
+            'overview' => $overview,
             'selfId' => $dashboard->self()['node_id'],
+            'switchNodes' => $overview['nodes'] ?? [],
         ]);
     }
 
@@ -38,6 +41,7 @@ class DashboardController extends Controller
             'node' => $data,
             'isSelf' => $isSelf,
             'selfId' => $overview['node']['node_id'],
+            'switchNodes' => $overview['nodes'] ?? [],
             'backups' => $isSelf ? $overview['backups'] : [],
             'conflicts' => $overview['conflicts'],
             'recovery' => $isSelf ? $overview['recovery'] : null,
