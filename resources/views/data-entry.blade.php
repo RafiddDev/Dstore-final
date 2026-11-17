@@ -10,8 +10,14 @@
         *{box-sizing:border-box} body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text)}
         .wrap{max-width:1200px;margin:0 auto;padding:24px}
         h1{margin:0 0 6px;font-size:28px} p.sub{color:var(--muted);margin:0 0 20px}
-        .grid{display:grid;grid-template-columns:360px 1fr;gap:18px}
+        .grid{display:grid;grid-template-columns:360px 1fr 320px;gap:18px;align-items:start}
         .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+        .history-list{max-height:70vh;overflow:auto;display:flex;flex-direction:column;gap:10px}
+        .hist-item{border:1px solid var(--line);background:var(--panel2);border-radius:10px;padding:10px 12px;font-size:12.5px}
+        .hist-top{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:4px}
+        .pill{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+        .pill.manual{color:var(--accent);border-color:rgba(56,189,248,.4)} .pill.auto{color:#a78bfa;border-color:rgba(167,139,250,.4)}
+        .pill.ok{color:var(--ok);border-color:rgba(52,211,153,.4)} .pill.bad{color:var(--bad);border-color:rgba(248,113,113,.4)}
         .card h2{margin:0 0 12px;font-size:16px;color:var(--accent)}
         label{display:block;font-size:13px;color:var(--muted);margin:10px 0 6px}
         input,select{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);color:var(--text)}
@@ -24,7 +30,7 @@
         button:hover{filter:brightness(1.05)} button:disabled{opacity:.6;cursor:wait}
         .msg{margin-top:12px;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);font-size:13px}
         .msg.ok{border-color:rgba(52,211,153,.4);color:var(--ok)} .msg.bad{border-color:rgba(248,113,113,.4);color:var(--bad)}
-        .nodes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+        .nodes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
         .node-card h3{margin:0 0 4px;font-size:15px;display:flex;justify-content:space-between;align-items:center}
         .badge{font-size:11px;padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
         .badge.ok{color:var(--ok);border-color:rgba(52,211,153,.4)}
@@ -37,7 +43,7 @@
         .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
         .top-actions{margin-left:auto;display:flex;gap:8px}
         .small-btn{width:auto;margin:0;padding:7px 10px;font-size:12px;background:#1a2c47;color:var(--text);border:1px solid var(--line)}
-        @media(max-width:900px){.grid{grid-template-columns:1fr}}
+        @media(max-width:1100px){.grid{grid-template-columns:1fr} .nodes{grid-template-columns:1fr}}
     </style>
 </head>
 <body>
@@ -48,6 +54,7 @@
             <p class="sub">Kisi bhi node par record insert karo (email, username, password) aur sab nodes par replication verify karo.</p>
         </div>
         <div class="top-actions">
+            <button class="small-btn" id="syncBtn" type="button" onclick="syncNow()">Sync now</button>
             <button class="small-btn" type="button" onclick="loadAll()">Refresh all</button>
             <a class="small-btn" href="/" style="text-decoration:none;display:inline-block;text-align:center">Dashboard</a>
         </div>
@@ -56,6 +63,7 @@
     <div class="grid">
         <div class="card">
             <h2>Insert Data</h2>
+            <div id="syncMsg" class="msg" style="display:none;margin-top:0;margin-bottom:12px"></div>
             <form id="entryForm">
                 <label for="targetNode">Target Node (jis node par save hoga)</label>
                 <select id="targetNode" name="target_node" required>
@@ -94,6 +102,12 @@
             <h2>Records on All Nodes</h2>
             <p class="muted" style="margin-top:-4px">Har node ki local `accounts/users` records neeche dikh rahi hain. Replication sahi ho to naya record sab mein aa jayega.</p>
             <div id="nodesWrap" class="nodes"></div>
+        </div>
+
+        <div class="card">
+            <h2>Sync History <span id="historyNodeLabel" class="muted" style="font-size:12px;font-weight:500"></span></h2>
+            <p class="muted" style="margin-top:-4px">Selected target node ki manual aur auto sync history (har sync run ka time aur result).</p>
+            <div id="syncHistoryWrap" class="history-list"><div class="empty">Loading history...</div></div>
         </div>
     </div>
 </div>
@@ -186,6 +200,105 @@ function showMsg(text, ok){
     el.textContent=text;
 }
 
+function showSyncMsg(text, ok){
+    const el = document.getElementById('syncMsg');
+    el.style.display='block';
+    el.className='msg ' + (ok?'ok':'bad');
+    el.textContent=text;
+}
+
+function selectedTargetNodeId(){
+    const sel = document.getElementById('targetNode');
+    return (sel && sel.selectedOptions[0] && sel.selectedOptions[0].dataset.id) || '';
+}
+
+function selectedTargetNodeName(){
+    const sel = document.getElementById('targetNode');
+    const id = selectedTargetNodeId();
+    const txt = (sel && sel.selectedOptions[0] && sel.selectedOptions[0].text) || id;
+    return txt.split(' - ')[0] || id || 'node';
+}
+
+async function loadSyncHistory(){
+    const wrap = document.getElementById('syncHistoryWrap');
+    const nodeId = selectedTargetNodeId();
+    const label = document.getElementById('historyNodeLabel');
+    if(label) label.textContent = nodeId ? ('— ' + selectedTargetNodeName()) : '';
+    if(!nodeId){
+        wrap.innerHTML = '<div class="empty">Target node select karein.</div>';
+        return;
+    }
+    try {
+        const r = await fetch('/data-entry/nodes/' + encodeURIComponent(nodeId) + '/sync-history', { headers: { 'Accept': 'application/json' }, cache: 'no-store' });
+        const data = await r.json().catch(()=>({ok:false}));
+        if(!r.ok || !data.ok){ throw new Error(data.error || ('HTTP '+r.status)); }
+        const items = data.history || [];
+        if(items.length === 0){
+            wrap.innerHTML = `<div class="empty">${esc(selectedTargetNodeName())} ke liye abhi koi sync history nahi. "Sync now" chalayein ya auto sync ka wait karein.</div>`;
+            return;
+        }
+        wrap.innerHTML = items.map(h=>{
+            const type = esc(h.type || 'sync');
+            const ok = h.reachable !== false && !h.error;
+            const dur = (h.duration_ms !== undefined && h.duration_ms !== null) ? (Number(h.duration_ms).toFixed(2) + ' ms') : '?';
+            const at = esc(h.at || '');
+            const peer = esc(h.peer || '');
+            const err = h.error ? `<div class="muted" style="color:var(--bad);margin-top:4px">Error: ${esc(h.error)}</div>` : '';
+            return `<div class="hist-item">
+                <div class="hist-top">
+                    <span class="pill ${type==='manual'?'manual':'auto'}">${type}</span>
+                    <span class="pill ${ok?'ok':'bad'}">${ok?'ok':'fail'}</span>
+                </div>
+                <div><strong>Peer:</strong> ${peer} &nbsp; <strong>Time:</strong> ${dur}</div>
+                <div class="muted" style="margin-top:2px">pulled ${esc(h.pulled||0)} · applied ${esc(h.applied||0)} · pushed ${esc(h.pushed||0)} · delivered ${esc(h.delivered||0)} · pending ${esc(h.pending||0)}</div>
+                <div class="muted" style="margin-top:2px">${at}</div>
+                ${err}
+            </div>`;
+        }).join('');
+    } catch(e){
+        wrap.innerHTML = `<div class="empty">History load nahi ho saki: ${esc(e.message)}</div>`;
+    }
+}
+
+async function syncNow(){
+    const btn = document.getElementById('syncBtn');
+    const nodeId = selectedTargetNodeId();
+    if(!nodeId){ showSyncMsg('Target node select karein.', false); return; }
+    btn.disabled = true;
+    showSyncMsg('Sync chal rahi hai (' + selectedTargetNodeName() + ')...', true);
+    try {
+        const r = await fetch('/data-entry/nodes/' + encodeURIComponent(nodeId) + '/sync', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+            },
+            body: '{}'
+        });
+        const data = await r.json().catch(()=>({ok:false,error:'invalid response'}));
+        if(!r.ok || !data.ok){
+            throw new Error(data.error || ('HTTP '+r.status));
+        }
+        const dur = (data.duration_ms !== undefined) ? (' in ' + Number(data.duration_ms).toFixed(2) + ' ms') : '';
+        const msg = 'Sync complete on ' + selectedTargetNodeName() + dur + ': peers=' + (data.peers||0)
+            + ', reachable=' + (data.reachable||0)
+            + ', pulled=' + (data.pulled||0)
+            + ', applied=' + (data.applied||0)
+            + ', pushed=' + (data.pushed||0)
+            + ', pending=' + (data.pending||0);
+        showSyncMsg(msg, true);
+        loadSyncHistory();
+        setTimeout(loadAll, 500);
+        setTimeout(loadAll, 2000);
+    } catch(err){
+        showSyncMsg('Manual sync failed: ' + err.message, false);
+        loadSyncHistory();
+    } finally {
+        btn.disabled = false;
+    }
+}
+
 document.getElementById('togglePassword').addEventListener('click', function(){
     const input = document.getElementById('password');
     const show = input.type === 'password';
@@ -235,8 +348,12 @@ document.getElementById('entryForm').addEventListener('submit', async (e)=>{
     }
 });
 
+document.getElementById('targetNode').addEventListener('change', loadSyncHistory);
+
 loadAll();
+loadSyncHistory();
 setInterval(loadAll, 12000);
+setInterval(loadSyncHistory, 10000);
 </script>
 </body>
 </html>

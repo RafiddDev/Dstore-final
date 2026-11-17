@@ -35,10 +35,14 @@ final class SyncEngine
         private readonly EventVerifier $verifier,
         private readonly EventRelay $relay,
         private readonly HeartbeatService $heartbeat,
+        private readonly ?SyncHistory $history = null,
     ) {}
 
     public function sync(string $peerId): SyncReport
     {
+        $started = microtime(true);
+        $type = app()->runningInConsole() ? 'auto' : 'manual';
+
         $this->directory->require($peerId);
 
         $beat = $this->heartbeat->beat($peerId);
@@ -48,7 +52,10 @@ final class SyncEngine
 
             $this->tracker->recordFailure($peerId, $error, $this->events->pendingCount($peerId));
 
-            return new SyncReport($peerId, false, 0, 0, 0, 0, 0, 0, $this->events->pendingCount($peerId), $error);
+            $report = new SyncReport($peerId, false, 0, 0, 0, 0, 0, 0, $this->events->pendingCount($peerId), $error);
+            $this->logHistory($peerId, $type, $started, $report);
+
+            return $report;
         }
 
         $peerVector = $beat->appliedVector;
@@ -60,7 +67,7 @@ final class SyncEngine
 
         $push = $this->replicator->push($peerId);
 
-        return new SyncReport(
+        $report = new SyncReport(
             $peerId,
             true,
             $pull['pulled'],
@@ -71,6 +78,34 @@ final class SyncEngine
             $push->delivered,
             $push->pending,
         );
+
+        $this->logHistory($peerId, $type, $started, $report);
+
+        return $report;
+    }
+
+    private function logHistory(string $peerId, string $type, float $started, SyncReport $report): void
+    {
+        $history = $this->history;
+
+        if ($history === null && function_exists('app')) {
+            try {
+                $history = app(SyncHistory::class);
+            } catch (\Throwable) {
+                $history = null;
+            }
+        }
+
+        if ($history === null) {
+            return;
+        }
+
+        try {
+            $durationMs = (microtime(true) - $started) * 1000;
+            $history->log($peerId, $type, $durationMs, $report->toArray());
+        } catch (\Throwable) {
+            // History is observability only; never fail a sync because of it.
+        }
     }
 
     /**
