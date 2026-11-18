@@ -20,6 +20,15 @@ class DataEntryController extends Controller
         $nodes = $this->nodes();
         $current = $this->currentNode();
         $setupToken = trim((string) $request->query('setup', ''));
+
+        // Allow base URL to act as one-time setup URL if an unused token exists.
+        if ($setupToken === '') {
+            $stored = $this->readSetupToken();
+            if (is_array($stored) && empty($stored['used_at']) && !empty($stored['token'])) {
+                $setupToken = (string) $stored['token'];
+            }
+        }
+
         $setupMode = $setupToken !== '' && $this->isValidSetupToken($setupToken);
 
         return view('data-entry', [
