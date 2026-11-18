@@ -780,24 +780,8 @@ class DataEntryController extends Controller
             }
         }
 
-        foreach ([
-            'pakistan' => 'http://127.0.0.1:8001',
-            // 'uae' => 'http://127.0.0.1:8002',
-            // 'usa' => 'http://127.0.0.1:8003',
-            'uk' => 'http://127.0.0.1:8004',
-        ] as $id => $url) {
-
-            if (!isset($nodes[$id])) {
-                $nodes[$id] = [
-                    'id' => $id,
-                    'name' => Str::headline($id),
-                    'url' => $url,
-                ];
-            } elseif (($nodes[$id]['url'] ?? '') === '') {
-                $nodes[$id]['url'] = $url;
-            }
-        }
-
+        // No hardcoded peers: nodes appear only when explicitly configured
+        // (DSTORE_PEERS / stored peers) or added via "Add node".
         foreach (['uae', 'usa'] as $disabled) {
             unset($nodes[$disabled]);
         }

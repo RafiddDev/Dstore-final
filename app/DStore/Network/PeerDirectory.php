@@ -19,24 +19,14 @@ final class PeerDirectory
     {
         $endpoints = [];
 
+        // Only peers explicitly registered (via Add Node or enrollment) are shown.
+        // Configured peers from env are not auto-displayed until registered.
         foreach ($this->registry->all() as $id => $peer) {
             $endpoints[$id] = new PeerEndpoint(
                 $id,
                 (string) ($peer['url'] ?? ''),
                 $peer['status'] === PeerRegistry::STATUS_APPROVED,
                 $peer['fingerprint'] !== null ? (string) $peer['fingerprint'] : null,
-            );
-        }
-
-        foreach ($this->configuredPeers as $id => $peer) {
-            if (isset($endpoints[$id])) {
-                continue;
-            }
-
-            $endpoints[$id] = new PeerEndpoint(
-                $id,
-                (string) ($peer['url'] ?? ''),
-                false,
             );
         }
 
