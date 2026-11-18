@@ -162,13 +162,7 @@ final class StorageEngine implements StorageEngineInterface
         $total = 0;
 
         foreach ($this->index->collections() as $collection) {
-            $count = 0;
-
-            foreach (array_keys($this->index->all($collection)) as $recordId) {
-                if ($this->records->exists($collection, $recordId)) {
-                    $count++;
-                }
-            }
+            $count = count($this->all($collection));
 
             $collections[$collection] = $count;
             $total += $count;
