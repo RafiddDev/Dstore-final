@@ -15,14 +15,18 @@ use Illuminate\Support\Str;
 
 class DataEntryController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $nodes = $this->nodes();
         $current = $this->currentNode();
+        $setupToken = trim((string) $request->query('setup', ''));
+        $setupMode = $setupToken !== '' && $this->isValidSetupToken($setupToken);
 
         return view('data-entry', [
             'nodes' => array_values($nodes),
             'current' => $current,
+            'setupMode' => $setupMode,
+            'setupToken' => $setupMode ? $setupToken : '',
         ]);
     }
 
@@ -248,7 +252,16 @@ class DataEntryController extends Controller
                 'region' => ['nullable', 'string', 'max:120'],
                 'url' => ['nullable', 'string', 'max:255'],
                 'port' => ['nullable', 'integer', 'min:1', 'max:65535'],
+                'setup_token' => ['required', 'string', 'max:128'],
             ]);
+
+            $setupToken = trim((string) $data['setup_token']);
+            if (! $this->isValidSetupToken($setupToken)) {
+                return response()->json([
+                    'ok' => false,
+                    'error' => 'Setup link invalid ya expire/used ho chuka hai. Naya one-time setup link chahiye.',
+                ], 403);
+            }
 
             $name = trim((string) $data['name']);
             $region = trim((string) ($data['region'] ?? ''));
@@ -276,7 +289,8 @@ class DataEntryController extends Controller
             // Auto-generate url if not provided
             $url = rtrim(trim((string) ($data['url'] ?? '')), '/');
             if ($url === '') {
-                $url = 'http://127.0.0.1:' . $port;
+                $host = $this->guessClientHost($request);
+                $url = 'http://' . $host . ':' . $port;
             }
 
             $selfId = (string) config('dstore.node.id', 'node');
@@ -464,17 +478,23 @@ class DataEntryController extends Controller
                 ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
             }
 
+            // One-time setup token consumed after successful add
+            $this->consumeSetupToken($setupToken);
+
             return response()->json([
                 'ok' => true,
                 'node' => $identity,
                 'storage_path' => $storageRoot,
                 'registered_in' => $selfId,
-                'message' => "Node '{$name}' scaffolded. Ab new PC par is node ko run/connect karna hoga.",
+                'dashboard_url' => route('dashboard.isolated', ['node' => $id], false),
+                'setup_consumed' => true,
+                'message' => "Node '{$name}' add ho gaya (one-time setup use ho chuka). Ab new PC par is node ko run/connect karna hoga.",
                 'next_steps' => [
-                    'New PC par project clone/deploy karein (ya isi storage/config ko le jayein).',
-                    "nodes/{$id}/ ke liye .env.{$id} banayein (DSTORE_NODE_ID={$id}, DSTORE_NODE_NAME, DSTORE_REGION, DSTORE_PUBLIC_URL={$url}, DSTORE_STORAGE_PATH=nodes/{$id}/storage/dstore, DSTORE_PEERS aur peer URLs).",
-                    "Existing nodes (Pakistan/UK) ki peers/config mein bhi is naye node ko add/approve karein agar mutual mesh chahiye.",
+                    "Is node folder ko target PC par rakhein (nodes/{$id}/...) ya wahan project copy karke isi storage ko use karein.",
+                    "Target PC par .env.{$id} banayein (DSTORE_NODE_ID={$id}, DSTORE_NODE_NAME, DSTORE_REGION, DSTORE_PUBLIC_URL={$url}, DSTORE_STORAGE_PATH=nodes/{$id}/storage/dstore, DSTORE_PEERS aur peer URLs).",
+                    "Existing nodes ki peers/config mein bhi is naye node ko add/approve karein (mutual mesh/sync ke liye) — is node ki public_key/fingerprint upar di gayi hai.",
                     "Phir run karein: php artisan --env={$id} config:clear && php artisan --env={$id} serve --host=0.0.0.0 --port=".($port ?: '<port>')." (+ schedule:work, dstore:monitor).",
+                    "PC3 dashboard par sirf PC3 dikhane ke liye .env.{$id} mein DSTORE_DASHBOARD_SELF_ONLY=true set karein (sync/peering phir bhi kaam karegi).",
                 ],
             ]);
         } catch (\Illuminate\Validation\ValidationException $e) {
@@ -732,6 +752,60 @@ class DataEntryController extends Controller
             'output' => implode("\n", $output),
             'history' => $history,
         ]);
+    }
+
+    private function setupTokenPath(): string
+    {
+        return $this->localMetadataPath('setup_token.json');
+    }
+
+    /**
+     * @return array{token?:string,created_at?:string,used_at?:?string}|null
+     */
+    private function readSetupToken(): ?array
+    {
+        $path = $this->setupTokenPath();
+        if (!is_file($path)) return null;
+        $data = json_decode((string) @file_get_contents($path), true);
+        return is_array($data) ? $data : null;
+    }
+
+    private function isValidSetupToken(string $token): bool
+    {
+        $token = trim($token);
+        if ($token === '') return false;
+        $data = $this->readSetupToken();
+        if (!is_array($data)) return false;
+        if (($data['token'] ?? '') !== $token) return false;
+        if (!empty($data['used_at'])) return false;
+        return true;
+    }
+
+    private function consumeSetupToken(string $token): void
+    {
+        $path = $this->setupTokenPath();
+        $data = $this->readSetupToken();
+        if (!is_array($data) || ($data['token'] ?? '') !== $token) return;
+        $data['used_at'] = gmdate('Y-m-d\TH:i:s\Z');
+        $data['used_by'] = $token;
+        @file_put_contents($path, json_encode($data, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+    }
+
+    private function guessClientHost(Request $request): string
+    {
+        // Best-effort: when URL is auto-generated, prefer a reachable host hint.
+        $xff = (string) $request->header('X-Forwarded-For', '');
+        if ($xff !== '') {
+            $first = trim(explode(',', $xff)[0]);
+            if ($first !== '' && !in_array($first, ['127.0.0.1', '::1'], true)) {
+                return $first;
+            }
+        }
+        $ip = (string) $request->ip();
+        if ($ip !== '' && !in_array($ip, ['127.0.0.1', '::1'], true)) {
+            return $ip;
+        }
+        return '127.0.0.1';
     }
 
     private function pathsForNode(string $node): \App\DStore\Storage\StoragePaths

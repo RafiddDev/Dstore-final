@@ -16,6 +16,8 @@ Route::get('/data-entry', [DataEntryController::class, 'index'])->name('data-ent
 Route::post('/data-entry', [DataEntryController::class, 'store'])->name('data-entry.store');
 Route::get('/data-entry/records', [DataEntryController::class, 'records'])->name('data-entry.records');
 Route::post('/data-entry/sync', [DataEntryController::class, 'sync'])->name('data-entry.sync');
+Route::post('/data-entry/add-node', [DataEntryController::class, 'addNode'])->name('data-entry.add-node');
+Route::options('/data-entry/add-node', [DataEntryController::class, 'options']);
 Route::get('/data-entry/sync-history', [DataEntryController::class, 'syncHistory'])->name('data-entry.sync-history');
 
 Route::options('/data-entry', [DataEntryController::class, 'options']);

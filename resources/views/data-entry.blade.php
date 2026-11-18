@@ -63,8 +63,14 @@
         <div>
             <h1>D-STORE Data Entry</h1>
             <p class="sub">Kisi bhi node par record insert karo (username) aur sab nodes par replication verify karo.</p>
+            @if(!empty($setupMode))
+                <div class="msg" style="margin-top:8px;border-color:rgba(56,189,248,.4);color:var(--accent)">One-time setup link active: sirf <strong>name</strong> dal kar node add karein. Ye option ek baar use hone ke baad band ho jayega.</div>
+            @endif
         </div>
         <div class="top-actions">
+            @if(!empty($setupMode))
+                <button class="small-btn btn-accent" id="addNodeBtn" type="button" onclick="openAddNode()">+ Add node (one-time)</button>
+            @endif
             <button class="small-btn" id="syncBtn" type="button" onclick="syncNow()">Sync now</button>
             <button class="small-btn" type="button" onclick="loadAll()">Refresh all</button>
             <a class="small-btn" href="/" style="text-decoration:none;display:inline-block;text-align:center">Dashboard</a>
@@ -111,8 +117,39 @@
     </div>
 </div>
 
+@if(!empty($setupMode))
+<div id="addNodeModal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="addNodeTitle">
+        <h3 id="addNodeTitle">Add New Node (One-time)</h3>
+        <p>Sirf <strong>node ka naam</strong> likhein — ID, port aur URL auto-generate honge. Ye setup link <strong>sirf ek baar</strong> kaam karega; node add hote hi band ho jayega.</p>
+        <form id="addNodeForm">
+            <div class="modal-grid">
+                <div class="full">
+                    <label for="an_name">Node Name</label>
+                    <input id="an_name" name="name" type="text" placeholder="PC 3" required>
+                </div>
+                <input type="hidden" id="an_id" name="id" value="">
+                <input type="hidden" id="an_region" name="region" value="">
+                <input type="hidden" id="an_port" name="port" value="">
+                <input type="hidden" id="an_url" name="url" value="">
+            </div>
+            <div id="addNodeAuto" class="note-box" style="display:none;margin-top:10px"></div>
+            <div id="addNodeMsg" class="msg" style="display:none"></div>
+            <div id="addNodeNext" class="note-box" style="display:none"></div>
+            <div class="modal-actions">
+                <button type="button" class="small-btn btn-secondary" onclick="closeAddNode()">Cancel</button>
+                <button type="submit" class="small-btn btn-accent" id="addNodeSubmit">Create Node</button>
+            </div>
+        </form>
+    </div>
+</div>
+@endif
+
 <script>
 const NODES = @json(array_values($nodes));
+const CURRENT = @json($current);
+const SETUP_MODE = @json((bool)($setupMode ?? false));
+const SETUP_TOKEN = @json((string)($setupToken ?? ''));
 
 function esc(v){ if(v===null||v===undefined) return '—'; return String(v).replace(/[&<>"']/g, s=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[s])); }
 
@@ -334,6 +371,97 @@ document.getElementById('entryForm').addEventListener('submit', async (e)=>{
 });
 
 document.getElementById('targetNode').addEventListener('change', loadSyncHistory);
+
+if (SETUP_MODE) {
+  function openAddNode(){
+    const m = document.getElementById('addNodeModal');
+    const name = document.getElementById('an_name');
+    const id = document.getElementById('an_id');
+    const url = document.getElementById('an_url');
+    const port = document.getElementById('an_port');
+    const region = document.getElementById('an_region');
+    const auto = document.getElementById('addNodeAuto');
+    const msg = document.getElementById('addNodeMsg');
+    const next = document.getElementById('addNodeNext');
+    if(!m) return;
+    msg.style.display='none'; next.style.display='none'; next.textContent='';
+    auto.style.display='none'; auto.textContent='';
+    m.classList.add('show'); m.setAttribute('aria-hidden','false');
+    setTimeout(()=>name && name.focus(), 30);
+
+    const syncAuto = () => {
+      const slug = (name.value || '').toLowerCase().trim().replace(/[^a-z0-9_-]+/g,'-').replace(/^-+|-+$/g,'') || 'node';
+      id.value = slug;
+      let maxPort = 8004;
+      (NODES || []).forEach(n => { const p = parseInt(((n.url||'').split(':')[2])||'0',10) || 0; if (p > maxPort) maxPort = p; });
+      const p = maxPort + 1 < 8005 ? 8005 : maxPort + 1;
+      port.value = p;
+      url.value = 'http://' + window.location.hostname + ':' + p; // best-effort; server may refine
+      region.value = '';
+      auto.style.display='block';
+      auto.textContent = 'Auto: ID=' + slug + ' | Port=' + p + ' | URL=' + url.value + ' (server final kar sakta hai)';
+    };
+    name.oninput = syncAuto;
+    syncAuto();
+  }
+  function closeAddNode(){
+    const m = document.getElementById('addNodeModal');
+    if (m) { m.classList.remove('show'); m.setAttribute('aria-hidden','true'); }
+  }
+  const modal = document.getElementById('addNodeModal');
+  if (modal) modal.addEventListener('click', function(e){ if(e.target===this) closeAddNode(); });
+
+  const addNodeForm = document.getElementById('addNodeForm');
+  if (addNodeForm) addNodeForm.addEventListener('submit', async function(e){
+    e.preventDefault();
+    const btn = document.getElementById('addNodeSubmit');
+    const msg = document.getElementById('addNodeMsg');
+    const next = document.getElementById('addNodeNext');
+    const payload = {
+      name: document.getElementById('an_name').value.trim(),
+      id: document.getElementById('an_id').value.trim(),
+      region: document.getElementById('an_region').value.trim(),
+      url: document.getElementById('an_url').value.trim(),
+      port: document.getElementById('an_port').value ? Number(document.getElementById('an_port').value) : null,
+      setup_token: SETUP_TOKEN
+    };
+    btn.disabled = true;
+    msg.style.display='block'; msg.className='msg'; msg.textContent='Node add ho raha hai (one-time setup)...';
+    next.style.display='none';
+    try {
+      const r = await fetch('/data-entry/add-node', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+        },
+        body: JSON.stringify(payload)
+      });
+      const data = await r.json().catch(()=>({ok:false,error:'invalid response'}));
+      if(!r.ok || !data.ok){
+        const detail = data.details ? ('\n' + JSON.stringify(data.details)) : '';
+        throw new Error((data.error || ('HTTP '+r.status)) + detail);
+      }
+      msg.className='msg ok';
+      msg.textContent = (data.message || 'Node created.') + ' (id: ' + (data.node?.node_id || data.node?.id || payload.id) + ')';
+      const steps = Array.isArray(data.next_steps) ? ('\n\nNext steps (manual):\n- ' + data.next_steps.join('\n- ')) : '';
+      next.style.display='block';
+      next.textContent = 'Dashboard (isolated): ' + (data.dashboard_url || ('/dashboard/isolated/' + (data.node?.node_id || payload.id)))
+        + '\nStorage: ' + (data.storage_path || ('nodes/'+(data.node?.node_id||payload.id)+'/storage/dstore'))
+        + '\nPublic key: ' + (data.node?.public_key || '-')
+        + '\nFingerprint: ' + (data.node?.fingerprint || '-')
+        + '\n\nOne-time setup link ab use ho chuki hai. Is page ko refresh karne par Add node option nahi rahega.'
+        + steps;
+      const addBtn = document.getElementById('addNodeBtn'); if (addBtn) addBtn.style.display = 'none';
+    } catch(err){
+      msg.className='msg bad';
+      msg.textContent = 'Add node failed: ' + err.message;
+    } finally {
+      btn.disabled = false;
+    }
+  });
+}
 
 loadAll();
 loadSyncHistory();
