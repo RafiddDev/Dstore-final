@@ -161,6 +161,51 @@ class DataEntryController extends Controller
         ]);
     }
 
+    public function deleteRecord(
+        Request $request,
+        string $node,
+        StorageEngineInterface $engine
+    ): JsonResponse {
+        $data = $request->validate([
+            'collection' => ['required', 'string', 'max:64'],
+            'record_id' => ['required', 'string', 'max:128'],
+        ]);
+
+        $collection = $data['collection'];
+        $recordId = $data['record_id'];
+
+        if ($node === $this->currentNode()['id']) {
+            try {
+                $ok = $engine->delete($collection, $recordId);
+                return response()->json(['ok' => $ok, 'node' => $this->currentNode()['id'], 'collection' => $collection, 'record_id' => $recordId]);
+            } catch (\Throwable $e) {
+                return response()->json(['ok' => false, 'error' => $e->getMessage()], 404);
+            }
+        }
+
+        $url = $this->nodeUrl($node);
+        if (!$url) {
+            return response()->json(['ok' => false, 'error' => 'Unknown node: ' . $node], 404);
+        }
+
+        try {
+            $response = Http::timeout(15)
+                ->acceptJson()
+                ->asJson()
+                ->post($url . '/data-entry/nodes/' . urlencode($node) . '/delete', [
+                    'collection' => $collection,
+                    'record_id' => $recordId,
+                ]);
+            $body = $response->json();
+            if (!is_array($body)) {
+                $body = ['ok' => false, 'error' => 'Invalid response from node.'];
+            }
+            return response()->json($body, $response->status());
+        } catch (\Throwable $e) {
+            return response()->json(['ok' => false, 'error' => 'Cannot connect to ' . $node], 502);
+        }
+    }
+
     public function records(
         StorageEngineInterface $engine
     ): JsonResponse {
@@ -198,6 +243,294 @@ class DataEntryController extends Controller
     public function options(): JsonResponse
     {
         return response()->json(['ok' => true]);
+    }
+
+    public function addNode(Request $request): JsonResponse
+    {
+        try {
+            $data = $request->validate([
+                'id' => ['required', 'string', 'max:64', 'regex:/^[a-zA-Z0-9][a-zA-Z0-9_-]*$/'],
+                'name' => ['required', 'string', 'max:120'],
+                'region' => ['nullable', 'string', 'max:120'],
+                'url' => ['required', 'string', 'max:255'],
+                'port' => ['nullable', 'integer', 'min:1', 'max:65535'],
+            ]);
+
+            $id = strtolower(trim((string) $data['id']));
+            $name = trim((string) $data['name']);
+            $region = trim((string) ($data['region'] ?? ''));
+            $url = rtrim(trim((string) $data['url']), '/');
+            $port = isset($data['port']) ? (int) $data['port'] : (int) (parse_url($url, PHP_URL_PORT) ?: 0);
+
+            if (in_array($id, ['uae', 'usa'], true)) {
+                return response()->json(['ok' => false, 'error' => 'This node id is reserved/disabled in current setup.'], 422);
+            }
+
+            $selfId = (string) config('dstore.node.id', 'node');
+            if ($id === $selfId) {
+                return response()->json(['ok' => false, 'error' => 'Node id same as current node.'], 422);
+            }
+
+            $nodesRoot = base_path('nodes');
+            $nodeDir = $nodesRoot.'/'.$id;
+            $storageRoot = $nodeDir.'/storage/dstore';
+
+            if (is_dir($nodeDir)) {
+                return response()->json(['ok' => false, 'error' => "Node directory already exists: nodes/{$id}"], 422);
+            }
+
+            $known = $this->nodes();
+            if (isset($known[$id])) {
+                // allow if directory missing but listed? treat as conflict
+                return response()->json(['ok' => false, 'error' => 'Node id already known in this mesh.'], 422);
+            }
+
+            // 1) Generate identity + encrypted key for the new node
+            $keyPair = sodium_crypto_sign_keypair();
+            $publicKey = base64_encode(sodium_crypto_sign_publickey($keyPair));
+            $secretKey = base64_encode(sodium_crypto_sign_secretkey($keyPair));
+            $fingerprint = hash('sha256', $publicKey);
+            $createdAt = gmdate('Y-m-d\TH:i:s\Z');
+
+            $metaDir = $storageRoot.'/metadata';
+            $keysDir = $metaDir.'/keys';
+            foreach ([
+                $storageRoot,
+                $metaDir,
+                $keysDir,
+                $metaDir.'/counters',
+                $metaDir.'/quarantine/events',
+                $metaDir.'/tombstones',
+                $storageRoot.'/records',
+                $storageRoot.'/events/committed',
+                $storageRoot.'/events/pending',
+                $storageRoot.'/events/sync',
+                $storageRoot.'/events/inbox',
+                $storageRoot.'/indexes',
+                $storageRoot.'/locks',
+                $storageRoot.'/snapshots',
+                $storageRoot.'/backups',
+                $storageRoot.'/recovery',
+            ] as $dir) {
+                if (!is_dir($dir) && !mkdir($dir, 0775, true) && !is_dir($dir)) {
+                    return response()->json(['ok' => false, 'error' => "Unable to create directory: {$dir}"], 500);
+                }
+            }
+
+            $appKey = (string) config('app.key', '');
+            $encryptionKey = $this->deriveNodeEncryptionKey($appKey);
+            $nonce = random_bytes(SODIUM_CRYPTO_SECRETBOX_NONCEBYTES);
+            $cipher = sodium_crypto_secretbox($secretKey, $nonce, $encryptionKey);
+            $keyFile = $keysDir.'/node.key';
+            file_put_contents($keyFile, json_encode([
+                'alg' => 'xsalsa20poly1305',
+                'nonce' => base64_encode($nonce),
+                'cipher' => base64_encode($cipher),
+                'created_at' => $createdAt,
+            ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+            @chmod($keyFile, 0600);
+
+            $identity = [
+                'node_id' => $id,
+                'name' => $name,
+                'region' => $region,
+                'public_key' => $publicKey,
+                'fingerprint' => $fingerprint,
+                'created_at' => $createdAt,
+                'url' => $url,
+            ];
+            file_put_contents($metaDir.'/node.json', json_encode($identity, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+
+            // 2) Seed new node's peers (so it can trust/connect when started on new PC)
+            $newPeers = [];
+            $selfIdentity = $this->localIdentity();
+            if ($selfIdentity !== null) {
+                $newPeers[$selfIdentity['node_id']] = [
+                    'id' => $selfIdentity['node_id'],
+                    'name' => (string) ($selfIdentity['name'] ?? $selfIdentity['node_id']),
+                    'url' => (string) ($selfIdentity['url'] ?? ''),
+                    'region' => (string) ($selfIdentity['region'] ?? ''),
+                    'public_key' => (string) ($selfIdentity['public_key'] ?? ''),
+                    'fingerprint' => (string) ($selfIdentity['fingerprint'] ?? ''),
+                    'status' => 'approved',
+                    'enrolled_at' => $createdAt,
+                    'approved_at' => $createdAt,
+                    'revoked_at' => null,
+                ];
+            }
+            foreach ($this->readPeersFile($this->localPeersPath()) as $pid => $peer) {
+                if (!is_array($peer)) continue;
+                $pid = (string) ($peer['id'] ?? $pid);
+                if ($pid === '' || $pid === $id || isset($newPeers[$pid])) continue;
+                if (($peer['status'] ?? '') !== 'approved' || empty($peer['public_key'])) continue;
+                $newPeers[$pid] = $peer;
+            }
+            ksort($newPeers);
+            file_put_contents($metaDir.'/peers.json', json_encode($newPeers, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+            file_put_contents($metaDir.'/peer_status.json', json_encode(new \stdClass(), JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+            file_put_contents($metaDir.'/conflicts.json', json_encode([], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+            file_put_contents($metaDir.'/replay.json', json_encode(new \stdClass(), JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+            file_put_contents($metaDir.'/health.json', json_encode([], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+            file_put_contents($metaDir.'/runtime.json', json_encode([
+                'epoch' => bin2hex(random_bytes(16)),
+                'started_at' => $createdAt,
+            ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+            file_put_contents($storageRoot.'/recovery/checkpoint.json', json_encode([
+                'status' => 'initialized',
+                'reason' => 'scaffolded-by-add-node',
+                'started_at' => $createdAt,
+                'finished_at' => $createdAt,
+                'steps' => [],
+                'error' => null,
+            ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+
+            // 3) Register new node in current (Pakistan/local) mesh metadata so it appears in UI/dashboard
+            $localPeersPath = $this->localPeersPath();
+            $localPeers = $this->readPeersFile($localPeersPath);
+            $localPeers[$id] = [
+                'id' => $id,
+                'name' => $name,
+                'url' => $url,
+                'region' => $region,
+                'public_key' => $publicKey,
+                'fingerprint' => $fingerprint,
+                'status' => 'approved',
+                'enrolled_at' => $createdAt,
+                'approved_at' => $createdAt,
+                'revoked_at' => null,
+            ];
+            ksort($localPeers);
+            if (!is_dir(dirname($localPeersPath))) { @mkdir(dirname($localPeersPath), 0775, true); }
+            file_put_contents($localPeersPath, json_encode($localPeers, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+
+            $localStatusPath = $this->localMetadataPath('peer_status.json');
+            $localStatus = $this->readPeersFile($localStatusPath);
+            $localStatus[$id] = array_merge([
+                'peer' => $id,
+                'state' => 'unknown',
+                'last_seen_at' => null,
+                'last_response_ms' => null,
+                'last_error' => null,
+                'consecutive_failures' => 0,
+                'updated_at' => $createdAt,
+                'name' => $name,
+                'region' => $region,
+                'url' => $url,
+                'epoch' => '',
+                'started_at' => null,
+                'reported_at' => null,
+                'restarts' => 0,
+                'last_restart_at' => null,
+                'records' => null,
+                'events_committed' => null,
+                'storage_bytes' => null,
+                'degraded' => false,
+                'destroyed_at' => null,
+            ], is_array($localStatus[$id] ?? null) ? $localStatus[$id] : []);
+            $localStatus[$id]['name'] = $name;
+            $localStatus[$id]['region'] = $region;
+            $localStatus[$id]['url'] = $url;
+            $localStatus[$id]['updated_at'] = $createdAt;
+            ksort($localStatus);
+            file_put_contents($localStatusPath, json_encode($localStatus, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+
+            $cursorPath = $this->localStorageRoot().'/events/sync/'.$id.'.json';
+            if (!is_file($cursorPath)) {
+                @mkdir(dirname($cursorPath), 0775, true);
+                file_put_contents($cursorPath, json_encode([
+                    'peer' => $id,
+                    'applied' => [],
+                    'delivered' => [],
+                    'pending_count' => 0,
+                    'last_heartbeat_at' => null,
+                    'last_sync_at' => null,
+                    'state' => 'unknown',
+                    'attempts' => 0,
+                    'last_error' => null,
+                    'failed' => false,
+                ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+            }
+
+            return response()->json([
+                'ok' => true,
+                'node' => $identity,
+                'storage_path' => $storageRoot,
+                'registered_in' => $selfId,
+                'message' => "Node '{$name}' scaffolded. Ab new PC par is node ko run/connect karna hoga.",
+                'next_steps' => [
+                    'New PC par project clone/deploy karein (ya isi storage/config ko le jayein).',
+                    "nodes/{$id}/ ke liye .env.{$id} banayein (DSTORE_NODE_ID={$id}, DSTORE_NODE_NAME, DSTORE_REGION, DSTORE_PUBLIC_URL={$url}, DSTORE_STORAGE_PATH=nodes/{$id}/storage/dstore, DSTORE_PEERS aur peer URLs).",
+                    "Existing nodes (Pakistan/UK) ki peers/config mein bhi is naye node ko add/approve karein agar mutual mesh chahiye.",
+                    "Phir run karein: php artisan --env={$id} config:clear && php artisan --env={$id} serve --host=0.0.0.0 --port=".($port ?: '<port>')." (+ schedule:work, dstore:monitor).",
+                ],
+            ]);
+        } catch (\Illuminate\Validation\ValidationException $e) {
+            return response()->json(['ok' => false, 'error' => 'Validation failed.', 'details' => $e->errors()], 422);
+        } catch (\Throwable $e) {
+            return response()->json(['ok' => false, 'error' => $e->getMessage()], 500);
+        }
+    }
+
+    private function localStorageRoot(): string
+    {
+        $nodeId = (string) config('dstore.node.id', 'node');
+        $path = (string) config('dstore.storage.path', base_path('nodes/'.$nodeId.'/storage/dstore'));
+        try {
+            return \App\DStore\Storage\StoragePaths::make($path, base_path())->root();
+        } catch (\Throwable) {
+            return base_path('nodes/'.$nodeId.'/storage/dstore');
+        }
+    }
+
+    private function localMetadataPath(string $file): string
+    {
+        return $this->localStorageRoot().'/metadata/'.$file;
+    }
+
+    private function localPeersPath(): string
+    {
+        return $this->localMetadataPath('peers.json');
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    private function readPeersFile(string $path): array
+    {
+        if (!is_file($path)) {
+            return [];
+        }
+        $decoded = json_decode((string) @file_get_contents($path), true);
+        return is_array($decoded) ? $decoded : [];
+    }
+
+    /**
+     * @return array<string, mixed>|null
+     */
+    private function localIdentity(): ?array
+    {
+        $path = $this->localMetadataPath('node.json');
+        if (!is_file($path)) {
+            return null;
+        }
+        $decoded = json_decode((string) @file_get_contents($path), true);
+        return is_array($decoded) ? $decoded : null;
+    }
+
+    private function deriveNodeEncryptionKey(string $appKey): string
+    {
+        $raw = $appKey;
+        if ($raw === '') {
+            throw new \RuntimeException('APP_KEY is not set; cannot encrypt node key.');
+        }
+        if (str_starts_with($raw, 'base64:')) {
+            $decoded = base64_decode(substr($raw, 7), true);
+            if ($decoded === false) {
+                throw new \RuntimeException('APP_KEY is not valid base64.');
+            }
+            $raw = $decoded;
+        }
+        return hash_hkdf('sha256', $raw, SODIUM_CRYPTO_SECRETBOX_KEYBYTES, 'dstore:node-secret-key:v1');
     }
 
     public function sync(SyncEngine $sync, PeerDirectory $directory): JsonResponse
@@ -430,6 +763,23 @@ class DataEntryController extends Controller
             ];
         }
 
+        foreach ($this->storedPeers() as $id => $peer) {
+            if (!isset($nodes[$id])) {
+                $nodes[$id] = [
+                    'id' => (string) ($peer['id'] ?? $id),
+                    'name' => (string) ($peer['name'] ?? Str::headline((string) $id)),
+                    'url' => (string) ($peer['url'] ?? ''),
+                ];
+            } elseif (($nodes[$id]['url'] ?? '') === '' && !empty($peer['url'])) {
+                $nodes[$id]['url'] = (string) $peer['url'];
+            } elseif (!empty($peer['url']) && $this->isLocalUrl((string) ($nodes[$id]['url'] ?? ''))) {
+                $nodes[$id]['url'] = (string) $peer['url'];
+            }
+            if (($nodes[$id]['name'] ?? '') === Str::headline((string) $id) && !empty($peer['name'])) {
+                $nodes[$id]['name'] = (string) $peer['name'];
+            }
+        }
+
         foreach ([
             'pakistan' => 'http://127.0.0.1:8001',
             // 'uae' => 'http://127.0.0.1:8002',
@@ -453,6 +803,31 @@ class DataEntryController extends Controller
         }
 
         return $nodes;
+    }
+
+    /**
+     * @return array<string, array<string, mixed>>
+     */
+    private function storedPeers(): array
+    {
+        try {
+            $path = base_path('nodes/'.((string) config('dstore.node.id', 'node')).'/storage/dstore/metadata/peers.json');
+            if (!is_file($path)) {
+                return [];
+            }
+            $decoded = json_decode((string) @file_get_contents($path), true);
+
+            return is_array($decoded) ? $decoded : [];
+        } catch (\Throwable) {
+            return [];
+        }
+    }
+
+    private function isLocalUrl(string $url): bool
+    {
+        $host = strtolower((string) parse_url($url, PHP_URL_HOST));
+
+        return in_array($host, ['127.0.0.1', 'localhost', '::1', '[::1]'], true);
     }
 
     private function currentNode(): array

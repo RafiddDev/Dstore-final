@@ -41,8 +41,19 @@
         .mono{font-family:ui-monospace,Consolas,monospace}
         .muted{color:var(--muted)} .empty{color:var(--muted);font-size:13px;padding:8px 0}
         .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-        .top-actions{margin-left:auto;display:flex;gap:8px}
+        .top-actions{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
         .small-btn{width:auto;margin:0;padding:7px 10px;font-size:12px;background:#1a2c47;color:var(--text);border:1px solid var(--line)}
+        .modal-backdrop{position:fixed;inset:0;background:rgba(2,8,20,.72);display:none;align-items:center;justify-content:center;padding:18px;z-index:60}
+        .modal-backdrop.show{display:flex}
+        .modal{width:100%;max-width:560px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+        .modal h3{margin:0 0 6px;font-size:18px;color:var(--accent)}
+        .modal p{margin:0 0 12px;color:var(--muted);font-size:13px}
+        .modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px}
+        .modal-grid .full{grid-column:1 / -1}
+        .modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}
+        .btn-secondary{background:#1a2c47;color:var(--text);border:1px solid var(--line)}
+        .btn-accent{background:var(--accent);color:#04121f}
+        .note-box{margin-top:10px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel2);font-size:12.5px;color:var(--muted);white-space:pre-wrap}
         @media(max-width:1100px){.grid{grid-template-columns:1fr} .nodes{grid-template-columns:1fr}}
     </style>
 </head>
@@ -54,6 +65,7 @@
             <p class="sub">Kisi bhi node par record insert karo (email, username, password) aur sab nodes par replication verify karo.</p>
         </div>
         <div class="top-actions">
+            <button class="small-btn" id="addNodeBtn" type="button" onclick="openAddNode()">+ Add node</button>
             <button class="small-btn" id="syncBtn" type="button" onclick="syncNow()">Sync now</button>
             <button class="small-btn" type="button" onclick="loadAll()">Refresh all</button>
             <a class="small-btn" href="/" style="text-decoration:none;display:inline-block;text-align:center">Dashboard</a>
@@ -109,6 +121,43 @@
             <p class="muted" style="margin-top:-4px">Selected target node ki manual aur auto sync history (har sync run ka time aur result).</p>
             <div id="syncHistoryWrap" class="history-list"><div class="empty">Loading history...</div></div>
         </div>
+    </div>
+</div>
+
+<div id="addNodeModal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="addNodeTitle">
+        <h3 id="addNodeTitle">Add New Node</h3>
+        <p>Naya node scaffold karo (identity/keys + storage + peer registration). Ye node Target Node, Sync History aur Dashboard mein turant show ho jayega. Isay chalane/connect karne ke liye new PC par run karna hoga.</p>
+        <form id="addNodeForm">
+            <div class="modal-grid">
+                <div>
+                    <label for="an_name">Node Name</label>
+                    <input id="an_name" name="name" type="text" placeholder="Dubai" required>
+                </div>
+                <div>
+                    <label for="an_id">Node ID (unique)</label>
+                    <input id="an_id" name="id" type="text" placeholder="dubai" required pattern="[a-zA-Z0-9][a-zA-Z0-9_-]*">
+                </div>
+                <div>
+                    <label for="an_region">Region</label>
+                    <input id="an_region" name="region" type="text" placeholder="middle-east">
+                </div>
+                <div>
+                    <label for="an_port">Port (optional)</label>
+                    <input id="an_port" name="port" type="number" min="1" max="65535" placeholder="8005">
+                </div>
+                <div class="full">
+                    <label for="an_url">Public URL (reachable address of this node)</label>
+                    <input id="an_url" name="url" type="text" placeholder="http://100.x.y.z:8005" required>
+                </div>
+            </div>
+            <div id="addNodeMsg" class="msg" style="display:none"></div>
+            <div id="addNodeNext" class="note-box" style="display:none"></div>
+            <div class="modal-actions">
+                <button type="button" class="small-btn btn-secondary" onclick="closeAddNode()">Cancel</button>
+                <button type="submit" class="small-btn btn-accent" id="addNodeSubmit">Create Node</button>
+            </div>
+        </form>
     </div>
 </div>
 
@@ -349,6 +398,94 @@ document.getElementById('entryForm').addEventListener('submit', async (e)=>{
 });
 
 document.getElementById('targetNode').addEventListener('change', loadSyncHistory);
+
+function openAddNode(){
+    const m = document.getElementById('addNodeModal');
+    const name = document.getElementById('an_name');
+    const id = document.getElementById('an_id');
+    const url = document.getElementById('an_url');
+    const port = document.getElementById('an_port');
+    const msg = document.getElementById('addNodeMsg');
+    const next = document.getElementById('addNodeNext');
+    msg.style.display='none'; next.style.display='none'; next.textContent='';
+    m.classList.add('show'); m.setAttribute('aria-hidden','false');
+    setTimeout(()=>name.focus(), 30);
+
+    const syncId = () => {
+        if (!id.dataset.touched) {
+            id.value = (name.value || '').toLowerCase().trim().replace(/[^a-z0-9_-]+/g,'-').replace(/^-+|-+$/g,'');
+        }
+        if (!url.dataset.touched) {
+            const nid = id.value || 'node';
+            const p = port.value || '8005';
+            url.value = 'http://127.0.0.1:' + p;
+            url.placeholder = 'http://100.x.y.z:' + p + ' (Tailscale/real URL)';
+        }
+    };
+    name.oninput = syncId; id.oninput = ()=>{ id.dataset.touched='1'; }; port.oninput = syncId; url.oninput = ()=>{ url.dataset.touched='1'; };
+}
+function closeAddNode(){
+    const m = document.getElementById('addNodeModal');
+    m.classList.remove('show'); m.setAttribute('aria-hidden','true');
+}
+document.getElementById('addNodeModal').addEventListener('click', function(e){ if(e.target===this) closeAddNode(); });
+
+document.getElementById('addNodeForm').addEventListener('submit', async function(e){
+    e.preventDefault();
+    const btn = document.getElementById('addNodeSubmit');
+    const msg = document.getElementById('addNodeMsg');
+    const next = document.getElementById('addNodeNext');
+    const payload = {
+        name: document.getElementById('an_name').value.trim(),
+        id: document.getElementById('an_id').value.trim(),
+        region: document.getElementById('an_region').value.trim(),
+        url: document.getElementById('an_url').value.trim(),
+        port: document.getElementById('an_port').value ? Number(document.getElementById('an_port').value) : null
+    };
+    btn.disabled = true;
+    msg.style.display='block'; msg.className='msg'; msg.textContent='Node scaffold ho raha hai...';
+    next.style.display='none';
+    try {
+        const r = await fetch('/data-entry/add-node', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+            },
+            body: JSON.stringify(payload)
+        });
+        const data = await r.json().catch(()=>({ok:false,error:'invalid response'}));
+        if(!r.ok || !data.ok){
+            const detail = data.details ? ('\n' + JSON.stringify(data.details)) : '';
+            throw new Error((data.error || ('HTTP '+r.status)) + detail);
+        }
+        msg.className='msg ok';
+        msg.textContent = (data.message || 'Node created.') + ' (id: ' + (data.node?.id||payload.id) + ')';
+        const steps = Array.isArray(data.next_steps) ? ('\n\nNext steps (manual):\n- ' + data.next_steps.join('\n- ')) : '';
+        next.style.display='block';
+        next.textContent = 'Storage: ' + (data.storage_path || ('nodes/'+payload.id+'/storage/dstore'))
+            + '\nRegistered in current mesh metadata: ' + (data.registered_in || 'current node')
+            + '\nFingerprint: ' + (data.node?.fingerprint || '—')
+            + steps
+            + '\n\nPage ab reload hogi taake Target Node / Dashboard / Sync history mein naya node dikh jaye.';
+        // add to dropdown immediately
+        const sel = document.getElementById('targetNode');
+        if (sel && !Array.from(sel.options).some(o=>o.dataset.id===payload.id)) {
+            const opt = document.createElement('option');
+            opt.value = payload.url;
+            opt.dataset.id = payload.id;
+            opt.textContent = payload.name + ' (' + payload.id + ') - ' + payload.url;
+            sel.appendChild(opt);
+        }
+        setTimeout(()=>location.reload(), 2500);
+    } catch(err){
+        msg.className='msg bad';
+        msg.textContent = 'Add node failed: ' + err.message;
+    } finally {
+        btn.disabled = false;
+    }
+});
 
 loadAll();
 loadSyncHistory();
