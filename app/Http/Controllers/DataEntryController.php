@@ -895,7 +895,52 @@ class DataEntryController extends Controller
             unset($nodes[$disabled]);
         }
 
-        return $nodes;
+        return $this->sortPinnedNodes($nodes);
+    }
+
+    /**
+     * Pin PC1 (pakistan) and PC2 (uk) first; other nodes follow in add sequence.
+     *
+     * @param  array<string, array{id:string,name:string,url:string}>  $nodes
+     * @return array<string, array{id:string,name:string,url:string}>
+     */
+    private function sortPinnedNodes(array $nodes): array
+    {
+        $pinned = ['pakistan', 'uk'];
+        $stored = $this->storedPeers();
+        $ordered = [];
+
+        foreach ($pinned as $id) {
+            if (isset($nodes[$id])) {
+                $ordered[$id] = $nodes[$id];
+            }
+        }
+
+        $rest = [];
+        foreach ($nodes as $id => $node) {
+            if (in_array($id, $pinned, true)) continue;
+            $meta = $stored[$id] ?? [];
+            $rest[$id] = [
+                'node' => $node,
+                'seq' => (string) ($meta['enrolled_at'] ?? $meta['approved_at'] ?? $meta['created_at'] ?? ''),
+                'id' => (string) $id,
+            ];
+        }
+
+        uasort($rest, function ($a, $b) {
+            $sa = $a['seq'] !== '' ? $a['seq'] : '9999-99-99T99:99:99Z';
+            $sb = $b['seq'] !== '' ? $b['seq'] : '9999-99-99T99:99:99Z';
+            if ($sa === $sb) {
+                return strcmp($a['id'], $b['id']);
+            }
+            return strcmp($sa, $sb);
+        });
+
+        foreach ($rest as $id => $item) {
+            $ordered[$id] = $item['node'];
+        }
+
+        return $ordered;
     }
 
     /**

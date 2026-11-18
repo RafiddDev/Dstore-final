@@ -55,13 +55,15 @@ final class DashboardService
         $nodes = [$self];
 
         if (! $this->selfOnlyDashboard()) {
+            $peers = [];
             foreach (array_keys($this->directory->all()) as $peerId) {
                 $node = $this->peer((string) $peerId);
 
                 if ($node !== null) {
-                    $nodes[] = $node;
+                    $peers[] = $node;
                 }
             }
+            $nodes = array_merge([$self], $this->sortPinnedPeerNodes($peers));
         }
 
         $summary = $this->summarise($nodes);
@@ -81,6 +83,51 @@ final class DashboardService
             'recovery_history' => $this->checkpoints->history(5),
             'generated_at' => Timestamp::now(),
         ];
+    }
+
+    /**
+     * Pin PC2 (uk) after self/PC1 context; other peers follow in add sequence.
+     *
+     * @param  list<array<string, mixed>>  $peers
+     * @return list<array<string, mixed>>
+     */
+    private function sortPinnedPeerNodes(array $peers): array
+    {
+        $pinned = ['uk'];
+        $head = [];
+        $rest = [];
+
+        foreach ($peers as $peer) {
+            $id = (string) ($peer['node_id'] ?? '');
+            $isPinned = in_array($id, $pinned, true);
+            $target = $isPinned ? 'head' : 'rest';
+            $meta = $this->registry->get($id) ?? [];
+            $item = [
+                'peer' => $peer,
+                'id' => $id,
+                'seq' => (string) ($meta['enrolled_at'] ?? $meta['approved_at'] ?? ''),
+                'pinnedIndex' => $isPinned ? array_search($id, $pinned, true) : 9999,
+            ];
+            if ($target === 'head') {
+                $head[] = $item;
+            } else {
+                $rest[] = $item;
+            }
+        }
+
+        usort($head, fn($a, $b) => $a['pinnedIndex'] <=> $b['pinnedIndex']);
+        usort($rest, function ($a, $b) {
+            $sa = $a['seq'] !== '' ? $a['seq'] : '9999-99-99T99:99:99Z';
+            $sb = $b['seq'] !== '' ? $b['seq'] : '9999-99-99T99:99:99Z';
+            if ($sa === $sb) return strcmp($a['id'], $b['id']);
+            return strcmp($sa, $sb);
+        });
+
+        $out = [];
+        foreach (array_merge($head, $rest) as $item) {
+            $out[] = $item['peer'];
+        }
+        return $out;
     }
 
     /**
