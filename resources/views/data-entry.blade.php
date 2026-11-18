@@ -64,7 +64,7 @@
             <h1>D-STORE Data Entry</h1>
             <p class="sub">Kisi bhi node par record insert karo (username) aur sab nodes par replication verify karo.</p>
             @if(!empty($setupMode))
-                <div class="msg" style="margin-top:8px;border-color:rgba(56,189,248,.4);color:var(--accent)">One-time setup link active: sirf <strong>name</strong> dal kar node add karein. Ye option ek baar use hone ke baad band ho jayega.</div>
+                <div class="msg" style="margin-top:8px;border-color:rgba(56,189,248,.4);color:var(--accent)">Setup link active (auto-renew): sirf <strong>name</strong> dal kar node add karein. Har add ke baad token auto-renew hoga — naya link/token manually nahi chahiye.</div>
             @endif
         </div>
         <div class="top-actions">
@@ -121,7 +121,7 @@
 <div id="addNodeModal" class="modal-backdrop" aria-hidden="true">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="addNodeTitle">
         <h3 id="addNodeTitle">Add New Node (One-time)</h3>
-        <p>Sirf <strong>node ka naam</strong> likhein — ID, port aur URL auto-generate honge. Ye setup link <strong>sirf ek baar</strong> kaam karega; node add hote hi band ho jayega.</p>
+        <p>Sirf <strong>node ka naam</strong> likhein — ID, port aur URL auto-generate honge. Har node add ke baad setup link/token <strong>auto-renew</strong> ho jata hai, is liye naya link/token manually nahi chahiye.</p>
         <form id="addNodeForm">
             <div class="modal-grid">
                 <div class="full">
@@ -451,9 +451,10 @@ if (SETUP_MODE) {
         + '\nStorage: ' + (data.storage_path || ('nodes/'+(data.node?.node_id||payload.id)+'/storage/dstore'))
         + '\nPublic key: ' + (data.node?.public_key || '-')
         + '\nFingerprint: ' + (data.node?.fingerprint || '-')
-        + '\n\nOne-time setup link ab use ho chuki hai. Is page ko refresh karne par Add node option nahi rahega.'
+        + '\n\nSetup link auto-renew ho gaya hai. Isi URL se agla node add karne ke liye page refresh karein ya Add node dobara use karein.'
         + steps;
-      const addBtn = document.getElementById('addNodeBtn'); if (addBtn) addBtn.style.display = 'none';
+      // Auto-renew: keep button available for next node add (same URL)
+      const addBtn = document.getElementById('addNodeBtn'); if (addBtn) addBtn.style.display = '';
     } catch(err){
       msg.className='msg bad';
       msg.textContent = 'Add node failed: ' + err.message;

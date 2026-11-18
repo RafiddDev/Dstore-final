@@ -487,7 +487,7 @@ class DataEntryController extends Controller
                 ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
             }
 
-            // One-time setup token consumed after successful add
+            // Token rotated after successful add so same URL works for next node (no manual new link needed)
             $this->consumeSetupToken($setupToken);
 
             return response()->json([
@@ -496,8 +496,8 @@ class DataEntryController extends Controller
                 'storage_path' => $storageRoot,
                 'registered_in' => $selfId,
                 'dashboard_url' => route('dashboard.isolated', ['node' => $id], false),
-                'setup_consumed' => true,
-                'message' => "Node '{$name}' add ho gaya (one-time setup use ho chuka). Ab new PC par is node ko run/connect karna hoga.",
+                'setup_rotated' => true,
+                'message' => "Node '{$name}' add ho gaya. Setup link/token auto-renew ho gaya — ab isi URL se agla node bhi add kar sakte hain.",
                 'next_steps' => [
                     "Is node folder ko target PC par rakhein (nodes/{$id}/...) ya wahan project copy karke isi storage ko use karein.",
                     "Target PC par .env.{$id} banayein (DSTORE_NODE_ID={$id}, DSTORE_NODE_NAME, DSTORE_REGION, DSTORE_PUBLIC_URL={$url}, DSTORE_STORAGE_PATH=nodes/{$id}/storage/dstore, DSTORE_PEERS aur peer URLs).",
@@ -792,12 +792,25 @@ class DataEntryController extends Controller
 
     private function consumeSetupToken(string $token): void
     {
+        // Auto-renew: rotate to a fresh token so the same URL keeps working for next node add.
+        $this->rotateSetupToken($token);
+    }
+
+    private function rotateSetupToken(string $usedToken): void
+    {
         $path = $this->setupTokenPath();
         $data = $this->readSetupToken();
-        if (!is_array($data) || ($data['token'] ?? '') !== $token) return;
-        $data['used_at'] = gmdate('Y-m-d\TH:i:s\Z');
-        $data['used_by'] = $token;
-        @file_put_contents($path, json_encode($data, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+        if (!is_array($data) || ($data['token'] ?? '') !== $usedToken) return;
+
+        $new = [
+            'token' => bin2hex(random_bytes(16)),
+            'created_at' => gmdate('Y-m-d\TH:i:s\Z'),
+            'used_at' => null,
+            'purpose' => (string) ($data['purpose'] ?? 'node add (auto-renew)'),
+            'rotated_at' => gmdate('Y-m-d\TH:i:s\Z'),
+            'last_used_token' => $usedToken,
+        ];
+        @file_put_contents($path, json_encode($new, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
     }
 
     private function guessClientHost(Request $request): string
