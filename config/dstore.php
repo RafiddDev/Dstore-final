@@ -74,4 +74,10 @@ return [
         'auto_snapshot_restore' => (bool) env('DSTORE_AUTO_SNAPSHOT_RESTORE', false),
         'backup_before_restore' => (bool) env('DSTORE_BACKUP_BEFORE_RESTORE', false),
     ],
+
+    'dashboard' => [
+        // When true, this node's dashboard/UI shows only itself (no other nodes).
+        // Peering/sync can still work in the background.
+        'self_only' => (bool) env('DSTORE_DASHBOARD_SELF_ONLY', false),
+    ],
 ];

@@ -54,11 +54,13 @@ final class DashboardService
         $self = $this->self();
         $nodes = [$self];
 
-        foreach (array_keys($this->directory->all()) as $peerId) {
-            $node = $this->peer((string) $peerId);
+        if (! $this->selfOnlyDashboard()) {
+            foreach (array_keys($this->directory->all()) as $peerId) {
+                $node = $this->peer((string) $peerId);
 
-            if ($node !== null) {
-                $nodes[] = $node;
+                if ($node !== null) {
+                    $nodes[] = $node;
+                }
             }
         }
 
@@ -92,7 +94,16 @@ final class DashboardService
             return $this->self();
         }
 
+        if ($this->selfOnlyDashboard()) {
+            return null;
+        }
+
         return $this->peer($nodeId);
+    }
+
+    public function selfOnlyDashboard(): bool
+    {
+        return (bool) config('dstore.dashboard.self_only', false);
     }
 
     public function isSelf(string $nodeId): bool

@@ -20,11 +20,12 @@ class DashboardController extends Controller
     public function index(DashboardService $dashboard)
     {
         $overview = $dashboard->overview();
+        $switchNodes = $dashboard->selfOnlyDashboard() ? [] : ($overview['nodes'] ?? []);
 
         return view('dashboard.overview', [
             'overview' => $overview,
             'selfId' => $dashboard->self()['node_id'],
-            'switchNodes' => $overview['nodes'] ?? [],
+            'switchNodes' => $switchNodes,
         ]);
     }
 
