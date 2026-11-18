@@ -355,7 +355,6 @@
                     </select>
                 </label>
             @endif
-            <button type="button" class="button" id="dashAddNodeBtn" style="padding:6px 10px;font-size:12px;">+ Add node</button>
             <span class="chip"><span class="dot online"></span> live · refresh 5 s</span>
             <span class="chip">updated <strong data-generated>—</strong></span>
         </div>
@@ -370,43 +369,6 @@
         Values refresh from this node's own files; nothing on this page is hard-coded.
     </footer>
 </main>
-
-<div id="addNodeModal" class="modal-backdrop" aria-hidden="true">
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="addNodeTitle">
-        <h3 id="addNodeTitle">Add New Node</h3>
-        <p>Naya node scaffold karo (identity/keys + storage + peer registration). Ye node dashboard/mesh list mein show ho jayega. Chalane/connect karne ke liye new PC par manual run/setup zaroori hai.</p>
-        <form id="addNodeForm">
-            <div class="modal-grid">
-                <div>
-                    <label for="an_name">Node Name</label>
-                    <input id="an_name" name="name" type="text" placeholder="Dubai" required>
-                </div>
-                <div>
-                    <label for="an_id">Node ID (unique)</label>
-                    <input id="an_id" name="id" type="text" placeholder="dubai" required pattern="[a-zA-Z0-9][a-zA-Z0-9_-]*">
-                </div>
-                <div>
-                    <label for="an_region">Region</label>
-                    <input id="an_region" name="region" type="text" placeholder="middle-east">
-                </div>
-                <div>
-                    <label for="an_port">Port (optional)</label>
-                    <input id="an_port" name="port" type="number" min="1" max="65535" placeholder="8005">
-                </div>
-                <div class="full">
-                    <label for="an_url">Public URL (reachable address)</label>
-                    <input id="an_url" name="url" type="text" placeholder="http://100.x.y.z:8005" required>
-                </div>
-            </div>
-            <div id="addNodeMsg" class="msg" style="display:none"></div>
-            <div id="addNodeNext" class="note-box" style="display:none"></div>
-            <div class="modal-actions">
-                <button type="button" class="button btn-secondary" id="addNodeCancel">Cancel</button>
-                <button type="submit" class="button btn-accent" id="addNodeSubmit">Create Node</button>
-            </div>
-        </form>
-    </div>
-</div>
 
 <script>
 (function () {
@@ -649,82 +611,6 @@
     wireProbe();
     const switcher = document.getElementById('node-switcher');
     if (switcher) { switcher.addEventListener('change', function () { if (this.value) window.location.href = this.value; }); }
-
-    (function wireAddNode(){
-        const modal = document.getElementById('addNodeModal');
-        const btn = document.getElementById('dashAddNodeBtn');
-        const cancel = document.getElementById('addNodeCancel');
-        const form = document.getElementById('addNodeForm');
-        if (!modal || !btn || !form) return;
-        const name = document.getElementById('an_name');
-        const id = document.getElementById('an_id');
-        const url = document.getElementById('an_url');
-        const port = document.getElementById('an_port');
-        const msg = document.getElementById('addNodeMsg');
-        const next = document.getElementById('addNodeNext');
-        function open(){
-            msg.style.display='none'; next.style.display='none'; next.textContent='';
-            modal.classList.add('show'); modal.setAttribute('aria-hidden','false');
-            setTimeout(()=>name && name.focus(), 30);
-        }
-        function close(){ modal.classList.remove('show'); modal.setAttribute('aria-hidden','true'); }
-        function syncId(){
-            if (id && !id.dataset.touched && name) {
-                id.value = (name.value || '').toLowerCase().trim().replace(/[^a-z0-9_-]+/g,'-').replace(/^-+|-+$/g,'');
-            }
-            if (url && !url.dataset.touched) {
-                const p = (port && port.value) || '8005';
-                url.value = 'http://127.0.0.1:' + p;
-            }
-        }
-        btn.addEventListener('click', open);
-        cancel && cancel.addEventListener('click', close);
-        modal.addEventListener('click', (e)=>{ if(e.target===modal) close(); });
-        name && name.addEventListener('input', syncId);
-        port && port.addEventListener('input', syncId);
-        id && id.addEventListener('input', ()=>{ id.dataset.touched='1'; });
-        url && url.addEventListener('input', ()=>{ url.dataset.touched='1'; });
-        form.addEventListener('submit', async (e)=>{
-            e.preventDefault();
-            const submit = document.getElementById('addNodeSubmit');
-            const payload = {
-                name: name ? name.value.trim() : '',
-                id: id ? id.value.trim() : '',
-                region: document.getElementById('an_region') ? document.getElementById('an_region').value.trim() : '',
-                url: url ? url.value.trim() : '',
-                port: (port && port.value) ? Number(port.value) : null
-            };
-            if (submit) submit.disabled = true;
-            msg.style.display='block'; msg.className='msg'; msg.textContent='Node scaffold ho raha hai...';
-            next.style.display='none';
-            try {
-                const r = await fetch('/data-entry/add-node', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': csrf },
-                    body: JSON.stringify(payload)
-                });
-                const data = await r.json().catch(()=>({ok:false,error:'invalid response'}));
-                if(!r.ok || !data.ok){
-                    const detail = data.details ? ('\n' + JSON.stringify(data.details)) : '';
-                    throw new Error((data.error || ('HTTP '+r.status)) + detail);
-                }
-                msg.className='msg ok';
-                msg.textContent = (data.message || 'Node created.') + ' (id: ' + (data.node?.node_id || payload.id) + ')';
-                const steps = Array.isArray(data.next_steps) ? ('\n\nNext steps (manual):\n- ' + data.next_steps.join('\n- ')) : '';
-                next.style.display='block';
-                next.textContent = 'Storage: ' + (data.storage_path || ('nodes/'+payload.id+'/storage/dstore'))
-                    + '\nFingerprint: ' + (data.node?.fingerprint || '—')
-                    + steps
-                    + '\n\nPage reload hogi taake naya node dashboard/list mein dikh jaye.';
-                setTimeout(()=>location.reload(), 2500);
-            } catch(err){
-                msg.className='msg bad';
-                msg.textContent = 'Add node failed: ' + err.message;
-            } finally {
-                if (submit) submit.disabled = false;
-            }
-        });
-    })();
 
     if (page === 'overview') {
         refreshOverview();

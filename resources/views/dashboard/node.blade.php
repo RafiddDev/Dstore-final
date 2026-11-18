@@ -46,7 +46,7 @@
     <div class="page-head">
         <div>
             <div class="breadcrumb">
-                <a href="{{ route('dashboard') }}">Network overview</a> / {{ $node['node_id'] }}
+                <a href="{{ route('dashboard') }}">Network overview</a> / {{ $node['name'] }}
             </div>
             <h2>
                 {{ $node['name'] }}
@@ -78,8 +78,7 @@
         <div class="card">
             <h3>Identity</h3>
             <dl class="kv">
-                <dt>Node id</dt>
-                <dd class="mono" data-field="node_id">{{ $node['node_id'] }}</dd>
+
                 <dt>Name</dt>
                 <dd data-field="name">{{ $node['name'] }}</dd>
                 <dt>Region</dt>

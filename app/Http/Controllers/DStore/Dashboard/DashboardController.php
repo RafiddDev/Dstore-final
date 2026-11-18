@@ -53,6 +53,21 @@ class DashboardController extends Controller
         return new JsonResponse($dashboard->overview());
     }
 
+    /**
+     * Isolated dashboard for a single node: shows ONLY that node's data.
+     * No mesh overview, no other nodes.
+     */
+    public function isolated(string $node, DashboardService $dashboard)
+    {
+        $data = $dashboard->node($node);
+        abort_if($data === null, 404, "Node {$node} is not known to this node.");
+
+        return view('dashboard.isolated', [
+            'node' => $data,
+            'isSelf' => $dashboard->isSelf($node),
+        ]);
+    }
+
     public function nodeData(string $node, DashboardService $dashboard): JsonResponse
     {
         $data = $dashboard->node($node);

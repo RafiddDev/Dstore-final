@@ -29,9 +29,7 @@ class DataEntryController extends Controller
     public function store(Request $request, StorageEngineInterface $engine)
     {
         $data = $request->validate([
-            'email' => ['required', 'string', 'max:255'],
             'username' => ['required', 'string', 'max:255'],
-            'password' => ['required', 'string', 'max:255'],
             'collection' => ['nullable', 'string', 'max:64'],
         ]);
 
@@ -89,9 +87,7 @@ class DataEntryController extends Controller
     ): JsonResponse {
 
         $data = $request->validate([
-            'email' => ['required', 'string', 'max:255'],
             'username' => ['required', 'string', 'max:255'],
-            'password' => ['required', 'string', 'max:255'],
             'collection' => ['nullable', 'string', 'max:64'],
         ]);
 
@@ -143,9 +139,7 @@ class DataEntryController extends Controller
         $recordId = 'acc_' . Str::lower(Str::random(10));
 
         $record = $engine->create($collection, [
-            'email' => $data['email'],
             'username' => $data['username'],
-            'password' => $data['password'],
             'created_via' => $this->currentNode()['id'],
         ], $recordId);
 
@@ -249,21 +243,40 @@ class DataEntryController extends Controller
     {
         try {
             $data = $request->validate([
-                'id' => ['required', 'string', 'max:64', 'regex:/^[a-zA-Z0-9][a-zA-Z0-9_-]*$/'],
+                'id' => ['nullable', 'string', 'max:64', 'regex:/^[a-zA-Z0-9][a-zA-Z0-9_-]*$/'],
                 'name' => ['required', 'string', 'max:120'],
                 'region' => ['nullable', 'string', 'max:120'],
-                'url' => ['required', 'string', 'max:255'],
+                'url' => ['nullable', 'string', 'max:255'],
                 'port' => ['nullable', 'integer', 'min:1', 'max:65535'],
             ]);
 
-            $id = strtolower(trim((string) $data['id']));
             $name = trim((string) $data['name']);
             $region = trim((string) ($data['region'] ?? ''));
-            $url = rtrim(trim((string) $data['url']), '/');
-            $port = isset($data['port']) ? (int) $data['port'] : (int) (parse_url($url, PHP_URL_PORT) ?: 0);
 
-            if (in_array($id, ['uae', 'usa'], true)) {
-                return response()->json(['ok' => false, 'error' => 'This node id is reserved/disabled in current setup.'], 422);
+            // Auto-generate id from name if not provided
+            $id = strtolower(trim((string) ($data['id'] ?? '')));
+            if ($id === '') {
+                $id = preg_replace('/[^a-z0-9_-]+/', '-', strtolower($name));
+                $id = trim($id, '-_');
+                if ($id === '') $id = 'node';
+            }
+
+            // Auto-determine port: next available after existing nodes
+            $port = isset($data['port']) && $data['port'] ? (int) $data['port'] : 0;
+            if ($port <= 0) {
+                $maxPort = 8004;
+                foreach ($this->nodes() as $n) {
+                    $p = (int) (parse_url((string)($n['url'] ?? ''), PHP_URL_PORT) ?: 0);
+                    if ($p > $maxPort) $maxPort = $p;
+                }
+                $port = $maxPort + 1;
+                if ($port < 8005) $port = 8005;
+            }
+
+            // Auto-generate url if not provided
+            $url = rtrim(trim((string) ($data['url'] ?? '')), '/');
+            if ($url === '') {
+                $url = 'http://127.0.0.1:' . $port;
             }
 
             $selfId = (string) config('dstore.node.id', 'node');

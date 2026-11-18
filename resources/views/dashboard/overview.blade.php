@@ -183,7 +183,7 @@
                     <tr>
                         <td>
                             <a class="name" href="{{ route('dashboard.node', ['node' => $peer['node_id']]) }}">{{ $peer['name'] }}</a>
-                            <span class="ident">{{ $peer['node_id'] }}@if ($peer['role'] === 'self') · this node @endif</span>
+                            @if ($peer['role'] === 'self')<span class="ident">this node</span>@endif
                         </td>
                         <td>{{ $peer['region'] ?: '—' }}</td>
                         <td><span class="badge {{ $peer['trust'] }}">{{ $peer['trust'] }}</span></td>
